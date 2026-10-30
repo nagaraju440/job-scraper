@@ -1,0 +1,1611 @@
+{
+ "run_at_ist": "2026-10-31T00:24+05:30",
+ "window_hours": 24,
+ "companies": {
+  "NVIDIA": {
+   "ats": "workday",
+   "open": 238,
+   "fetched": 10,
+   "seconds": 21.0,
+   "error": null,
+   "down": null,
+   "listed": 238,
+   "country_filter": true
+  },
+  "Salesforce": {
+   "ats": "workday",
+   "open": 92,
+   "fetched": 57,
+   "seconds": 42.2,
+   "error": null,
+   "down": null,
+   "listed": 92,
+   "country_filter": true
+  },
+  "Adobe": {
+   "ats": "workday",
+   "open": 38,
+   "fetched": 2,
+   "seconds": 3.6,
+   "error": null,
+   "down": null,
+   "listed": 38,
+   "country_filter": true
+  },
+  "PayPal": {
+   "ats": "workday",
+   "open": 19,
+   "fetched": 7,
+   "seconds": 6.5,
+   "error": null,
+   "down": null,
+   "listed": 19,
+   "country_filter": true
+  },
+  "Mastercard": {
+   "ats": "workday",
+   "open": 227,
+   "fetched": 47,
+   "seconds": 56.0,
+   "error": null,
+   "down": null,
+   "listed": 227,
+   "country_filter": true
+  },
+  "Target": {
+   "ats": "workday",
+   "open": 63,
+   "fetched": 9,
+   "seconds": 14.2,
+   "error": null,
+   "down": null,
+   "listed": 63,
+   "country_filter": true
+  },
+  "Autodesk": {
+   "ats": "workday",
+   "open": 1,
+   "fetched": 0,
+   "seconds": 1.5,
+   "error": null,
+   "down": null,
+   "listed": 1,
+   "country_filter": true
+  },
+  "Workday": {
+   "ats": "workday",
+   "open": 27,
+   "fetched": 4,
+   "seconds": 29.5,
+   "error": null,
+   "down": null,
+   "listed": 27,
+   "country_filter": true
+  },
+  "Stripe": {
+   "ats": "greenhouse",
+   "open": 747,
+   "fetched": 747,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Databricks": {
+   "ats": "greenhouse",
+   "open": 903,
+   "fetched": 903,
+   "seconds": 0.8,
+   "error": null,
+   "down": null
+  },
+  "Twilio": {
+   "ats": "greenhouse",
+   "open": 133,
+   "fetched": 133,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Coinbase": {
+   "ats": "greenhouse",
+   "open": 243,
+   "fetched": 243,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Okta": {
+   "ats": "greenhouse",
+   "open": 388,
+   "fetched": 388,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Postman": {
+   "ats": "workday",
+   "open": 9,
+   "fetched": 0,
+   "seconds": 0.7,
+   "error": null,
+   "down": null,
+   "listed": 9,
+   "country_filter": true
+  },
+  "PhonePe": {
+   "ats": "smartrecruiters",
+   "open": 131,
+   "fetched": 131,
+   "seconds": 2.5,
+   "error": null,
+   "down": null
+  },
+  "Groww": {
+   "ats": "greenhouse",
+   "open": 9,
+   "fetched": 9,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Rubrik": {
+   "ats": "greenhouse",
+   "open": 157,
+   "fetched": 157,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Cloudflare": {
+   "ats": "greenhouse",
+   "open": 462,
+   "fetched": 462,
+   "seconds": 0.6,
+   "error": null,
+   "down": null
+  },
+  "GitLab": {
+   "ats": "greenhouse",
+   "open": 238,
+   "fetched": 238,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "MongoDB": {
+   "ats": "greenhouse",
+   "open": 366,
+   "fetched": 366,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "Elastic": {
+   "ats": "greenhouse",
+   "open": 402,
+   "fetched": 402,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Meesho": {
+   "ats": "lever",
+   "open": 49,
+   "fetched": 49,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "CRED": {
+   "ats": "lever",
+   "open": 14,
+   "fetched": 14,
+   "seconds": 3.8,
+   "error": null,
+   "down": null
+  },
+  "Zeta": {
+   "ats": "lever",
+   "open": 31,
+   "fetched": 31,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Razorpay": {
+   "ats": "greenhouse",
+   "open": 31,
+   "fetched": 31,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Notion": {
+   "ats": "ashby",
+   "open": 147,
+   "fetched": 147,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Ramp": {
+   "ats": "ashby",
+   "open": 168,
+   "fetched": 168,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Visa": {
+   "ats": "workday",
+   "open": 95,
+   "fetched": 5,
+   "seconds": 9.8,
+   "error": null,
+   "down": null,
+   "listed": 95,
+   "country_filter": true
+  },
+  "ServiceNow": {
+   "ats": "smartrecruiters",
+   "open": 81,
+   "fetched": 81,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Freshworks": {
+   "ats": "smartrecruiters",
+   "open": 35,
+   "fetched": 35,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Microsoft": {
+   "ats": "eightfold",
+   "open": 210,
+   "fetched": 27,
+   "seconds": 19.2,
+   "error": null,
+   "down": null
+  },
+  "Amazon": {
+   "ats": "amazon",
+   "open": 368,
+   "fetched": 27,
+   "seconds": 4.1,
+   "error": null,
+   "down": null
+  },
+  "Ford Motor Company": {
+   "ats": "oracle",
+   "open": 904,
+   "fetched": 12,
+   "seconds": 21.5,
+   "error": null,
+   "down": null
+  },
+  "DP World": {
+   "ats": "oracle",
+   "open": 538,
+   "fetched": 16,
+   "seconds": 18.4,
+   "error": null,
+   "down": null
+  },
+  "Ralliant": {
+   "ats": "oracle",
+   "open": 308,
+   "fetched": 0,
+   "seconds": 2.1,
+   "error": null,
+   "down": null
+  },
+  "HighLevel": {
+   "ats": "lever",
+   "open": 108,
+   "fetched": 108,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Newfold Digital": {
+   "ats": "workday",
+   "open": 16,
+   "fetched": 2,
+   "seconds": 2.6,
+   "error": null,
+   "down": null,
+   "listed": 16,
+   "country_filter": true
+  },
+  "Aspen Technology": {
+   "ats": "workday",
+   "open": 15,
+   "fetched": 0,
+   "seconds": 1.0,
+   "error": null,
+   "down": null,
+   "listed": 15,
+   "country_filter": true
+  },
+  "CrowdStrike": {
+   "ats": "workday",
+   "open": 35,
+   "fetched": 5,
+   "seconds": 4.7,
+   "error": null,
+   "down": null,
+   "listed": 35,
+   "country_filter": true
+  },
+  "Backbase": {
+   "ats": "greenhouse",
+   "open": 63,
+   "fetched": 63,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Levi Strauss & Co.": {
+   "ats": "workday",
+   "open": 43,
+   "fetched": 19,
+   "seconds": 14.7,
+   "error": null,
+   "down": null,
+   "listed": 43,
+   "country_filter": true
+  },
+  "Cohere Health": {
+   "ats": "greenhouse",
+   "open": 72,
+   "fetched": 72,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "bp": {
+   "ats": "workday",
+   "open": 27,
+   "fetched": 9,
+   "seconds": 10.7,
+   "error": null,
+   "down": null,
+   "listed": 27,
+   "country_filter": true
+  },
+  "Coursera": {
+   "ats": "greenhouse",
+   "open": 31,
+   "fetched": 31,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Airbus": {
+   "ats": "workday",
+   "open": 214,
+   "fetched": 39,
+   "seconds": 47.7,
+   "error": null,
+   "down": null,
+   "listed": 214,
+   "country_filter": true
+  },
+  "The Hartford": {
+   "ats": "workday",
+   "open": 58,
+   "fetched": 9,
+   "seconds": 9.6,
+   "error": null,
+   "down": null,
+   "listed": 58,
+   "country_filter": true
+  },
+  "RELX": {
+   "ats": "workday",
+   "open": 59,
+   "fetched": 5,
+   "seconds": 8.6,
+   "error": null,
+   "down": null,
+   "listed": 59,
+   "country_filter": true
+  },
+  "Yext": {
+   "ats": "greenhouse",
+   "open": 23,
+   "fetched": 23,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "UiPath": {
+   "ats": "ashby",
+   "open": 103,
+   "fetched": 103,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Arctic Wolf": {
+   "ats": "workday",
+   "open": 46,
+   "fetched": 4,
+   "seconds": 5.4,
+   "error": null,
+   "down": null,
+   "listed": 46,
+   "country_filter": true
+  },
+  "Itron": {
+   "ats": "workday",
+   "open": 10,
+   "fetched": 2,
+   "seconds": 2.3,
+   "error": null,
+   "down": null,
+   "listed": 10,
+   "country_filter": true
+  },
+  "Gartner": {
+   "ats": "workday",
+   "open": 32,
+   "fetched": 9,
+   "seconds": 7.8,
+   "error": null,
+   "down": null,
+   "listed": 32,
+   "country_filter": true
+  },
+  "NCR Voyix": {
+   "ats": "workday",
+   "open": 29,
+   "fetched": 10,
+   "seconds": 11.2,
+   "error": null,
+   "down": null,
+   "listed": 29,
+   "country_filter": true
+  },
+  "SOTI": {
+   "ats": "workday",
+   "open": 30,
+   "fetched": 2,
+   "seconds": 4.0,
+   "error": null,
+   "down": null,
+   "listed": 30,
+   "country_filter": true
+  },
+  "G-P": {
+   "ats": "greenhouse",
+   "open": 59,
+   "fetched": 59,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Fanatics Commerce": {
+   "ats": "greenhouse",
+   "open": 214,
+   "fetched": 214,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Stryker": {
+   "ats": "workday",
+   "open": 88,
+   "fetched": 6,
+   "seconds": 10.3,
+   "error": null,
+   "down": null,
+   "listed": 88,
+   "country_filter": true
+  },
+  "SupplyHouse.com": {
+   "ats": "greenhouse",
+   "open": 28,
+   "fetched": 28,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Qualys": {
+   "ats": "workday",
+   "open": 1,
+   "fetched": 0,
+   "seconds": 1.7,
+   "error": null,
+   "down": null,
+   "listed": 1,
+   "country_filter": true
+  },
+  "SonicWall": {
+   "ats": "greenhouse",
+   "open": 48,
+   "fetched": 48,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Headout": {
+   "ats": "greenhouse",
+   "open": 18,
+   "fetched": 18,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Agilon Health": {
+   "ats": "workday",
+   "open": 10,
+   "fetched": 10,
+   "seconds": 7.1,
+   "error": null,
+   "down": null,
+   "listed": 10,
+   "country_filter": false
+  },
+  "Rakuten Symphony": {
+   "ats": "workday",
+   "open": 31,
+   "fetched": 9,
+   "seconds": 10.7,
+   "error": null,
+   "down": null,
+   "listed": 31,
+   "country_filter": true
+  },
+  "Curriculum Associates": {
+   "ats": "workday",
+   "open": 10,
+   "fetched": 2,
+   "seconds": 2.4,
+   "error": null,
+   "down": null,
+   "listed": 10,
+   "country_filter": true
+  },
+  "OpenGov": {
+   "ats": "ashby",
+   "open": 95,
+   "fetched": 95,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Crunchyroll": {
+   "ats": "greenhouse",
+   "open": 101,
+   "fetched": 101,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Wells Fargo": {
+   "ats": "workday",
+   "open": 83,
+   "fetched": 48,
+   "seconds": 61.0,
+   "error": null,
+   "down": null,
+   "listed": 83,
+   "country_filter": true
+  },
+  "U.S. Bank": {
+   "ats": "workday",
+   "open": 34,
+   "fetched": 9,
+   "seconds": 12.9,
+   "error": null,
+   "down": null,
+   "listed": 34,
+   "country_filter": true
+  },
+  "Capital One": {
+   "ats": "workday",
+   "open": 19,
+   "fetched": 10,
+   "seconds": 6.3,
+   "error": null,
+   "down": null,
+   "listed": 19,
+   "country_filter": true
+  },
+  "GE HealthCare": {
+   "ats": "workday",
+   "open": 165,
+   "fetched": 22,
+   "seconds": 23.7,
+   "error": null,
+   "down": null,
+   "listed": 165,
+   "country_filter": true
+  },
+  "PUMA": {
+   "ats": "workday",
+   "open": 81,
+   "fetched": 4,
+   "seconds": 8.8,
+   "error": null,
+   "down": null,
+   "listed": 81,
+   "country_filter": true
+  },
+  "MSD": {
+   "ats": "workday",
+   "open": 48,
+   "fetched": 26,
+   "seconds": 19.7,
+   "error": null,
+   "down": null,
+   "listed": 48,
+   "country_filter": true
+  },
+  "Bristol Myers Squibb": {
+   "ats": "workday",
+   "open": 32,
+   "fetched": 16,
+   "seconds": 15.0,
+   "error": null,
+   "down": null,
+   "listed": 32,
+   "country_filter": true
+  },
+  "Renesas Electronics": {
+   "ats": "smartrecruiters",
+   "open": 121,
+   "fetched": 121,
+   "seconds": 1.5,
+   "error": null,
+   "down": null
+  },
+  "tiket.com": {
+   "ats": "workday",
+   "open": 1,
+   "fetched": 0,
+   "seconds": 1.5,
+   "error": null,
+   "down": null,
+   "listed": 1,
+   "country_filter": true
+  },
+  "Bosch": {
+   "ats": "smartrecruiters",
+   "open": 558,
+   "fetched": 558,
+   "seconds": 5.4,
+   "error": null,
+   "down": null
+  },
+  "H&M": {
+   "ats": "smartrecruiters",
+   "open": 116,
+   "fetched": 116,
+   "seconds": 1.4,
+   "error": null,
+   "down": null
+  },
+  "Procore": {
+   "ats": "workday",
+   "open": 11,
+   "fetched": 1,
+   "seconds": 1.1,
+   "error": null,
+   "down": null,
+   "listed": 11,
+   "country_filter": true
+  },
+  "Guardian Life Insurance": {
+   "ats": "workday",
+   "open": 106,
+   "fetched": 12,
+   "seconds": 14.5,
+   "error": null,
+   "down": null,
+   "listed": 106,
+   "country_filter": false
+  },
+  "ClickHouse": {
+   "ats": "ashby",
+   "open": 206,
+   "fetched": 206,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Fox Corporation": {
+   "ats": "workday",
+   "open": 4,
+   "fetched": 3,
+   "seconds": 5.7,
+   "error": null,
+   "down": null,
+   "listed": 4,
+   "country_filter": true
+  },
+  "A.P. Moller - Maersk": {
+   "ats": "workday",
+   "open": 221,
+   "fetched": 24,
+   "seconds": 28.5,
+   "error": null,
+   "down": null,
+   "listed": 221,
+   "country_filter": true
+  },
+  "Light & Wonder": {
+   "ats": "workday",
+   "open": 35,
+   "fetched": 2,
+   "seconds": 3.0,
+   "error": null,
+   "down": null,
+   "listed": 35,
+   "country_filter": true
+  },
+  "Nike": {
+   "ats": "workday",
+   "open": 54,
+   "fetched": 8,
+   "seconds": 9.1,
+   "error": null,
+   "down": null,
+   "listed": 54,
+   "country_filter": true
+  },
+  "FactSet": {
+   "ats": "workday",
+   "open": 24,
+   "fetched": 3,
+   "seconds": 3.4,
+   "error": null,
+   "down": null,
+   "listed": 24,
+   "country_filter": true
+  },
+  "Citi": {
+   "ats": "workday",
+   "open": 911,
+   "fetched": 131,
+   "seconds": 155.1,
+   "error": null,
+   "down": null,
+   "listed": 910,
+   "country_filter": true
+  },
+  "eBay": {
+   "ats": "workday",
+   "open": 91,
+   "fetched": 13,
+   "seconds": 14.4,
+   "error": null,
+   "down": null,
+   "listed": 91,
+   "country_filter": true
+  },
+  "Snowflake": {
+   "ats": "ashby",
+   "open": 365,
+   "fetched": 365,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Blue Yonder": {
+   "ats": "workday",
+   "open": 62,
+   "fetched": 16,
+   "seconds": 14.8,
+   "error": null,
+   "down": null,
+   "listed": 62,
+   "country_filter": true
+  },
+  "Nextpower": {
+   "ats": "workday",
+   "open": 1,
+   "fetched": 0,
+   "seconds": 0.7,
+   "error": null,
+   "down": null,
+   "listed": 1,
+   "country_filter": true
+  },
+  "Barclays": {
+   "ats": "workday",
+   "open": 299,
+   "fetched": 53,
+   "seconds": 57.7,
+   "error": null,
+   "down": null,
+   "listed": 299,
+   "country_filter": true
+  },
+  "Blackbaud": {
+   "ats": "workday",
+   "open": 51,
+   "fetched": 51,
+   "seconds": 35.1,
+   "error": null,
+   "down": null,
+   "listed": 51,
+   "country_filter": true
+  },
+  "Walmart Global Tech": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "QAD": {
+   "ats": "smartrecruiters",
+   "open": 44,
+   "fetched": 44,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Platform Science": {
+   "ats": "greenhouse",
+   "open": 24,
+   "fetched": 24,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "ZoomInfo": {
+   "ats": "greenhouse",
+   "open": 99,
+   "fetched": 99,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "iManage": {
+   "ats": "greenhouse",
+   "open": 1,
+   "fetched": 1,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "ChargePoint": {
+   "ats": "greenhouse",
+   "open": 40,
+   "fetched": 40,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Agoda": {
+   "ats": "greenhouse",
+   "open": 308,
+   "fetched": 308,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "GoDaddy": {
+   "ats": "greenhouse",
+   "open": 28,
+   "fetched": 28,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Diligent": {
+   "ats": "greenhouse",
+   "open": 7,
+   "fetched": 7,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Hinge Health": {
+   "ats": "ashby",
+   "open": 79,
+   "fetched": 79,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "NETGEAR": {
+   "ats": "ashby",
+   "open": 51,
+   "fetched": 51,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "SpotOn": {
+   "ats": "ashby",
+   "open": 72,
+   "fetched": 72,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Endpoint Clinical": {
+   "ats": "lever",
+   "open": 25,
+   "fetched": 25,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "Foodsmart": {
+   "ats": "lever",
+   "open": 20,
+   "fetched": 20,
+   "seconds": 3.5,
+   "error": null,
+   "down": null
+  },
+  "SolarWinds": {
+   "ats": "greenhouse",
+   "open": 86,
+   "fetched": 86,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "NICE": {
+   "ats": "greenhouse",
+   "open": 179,
+   "fetched": 179,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Atolls": {
+   "ats": "greenhouse",
+   "open": 17,
+   "fetched": 17,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Menlo Security": {
+   "ats": "ashby",
+   "open": 25,
+   "fetched": 25,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "ixigo": {
+   "ats": "smartrecruiters",
+   "open": 7,
+   "fetched": 7,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Fanatics": {
+   "ats": "greenhouse",
+   "open": 23,
+   "fetched": 23,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Sonatype": {
+   "ats": "lever",
+   "open": 16,
+   "fetched": 16,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Porter": {
+   "ats": "lever",
+   "open": 22,
+   "fetched": 22,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Nextiva": {
+   "ats": "greenhouse",
+   "open": 18,
+   "fetched": 18,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Xometry": {
+   "ats": "greenhouse",
+   "open": 237,
+   "fetched": 237,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "SimpliSafe": {
+   "ats": "greenhouse",
+   "open": 32,
+   "fetched": 32,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Poppulo": {
+   "ats": "greenhouse",
+   "open": 9,
+   "fetched": 9,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Nasdaq": {
+   "ats": "greenhouse",
+   "open": 21,
+   "fetched": 21,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Juniper Square": {
+   "ats": "ashby",
+   "open": 49,
+   "fetched": 49,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "OneTrust": {
+   "ats": "greenhouse",
+   "open": 81,
+   "fetched": 81,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Cleo (India)": {
+   "ats": "greenhouse",
+   "open": 15,
+   "fetched": 15,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "SmartBear": {
+   "ats": "greenhouse",
+   "open": 21,
+   "fetched": 21,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "DigiCert": {
+   "ats": "greenhouse",
+   "open": 47,
+   "fetched": 47,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Payoneer": {
+   "ats": "greenhouse",
+   "open": 105,
+   "fetched": 105,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Instawork": {
+   "ats": "greenhouse",
+   "open": 56,
+   "fetched": 56,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Harvey": {
+   "ats": "ashby",
+   "open": 383,
+   "fetched": 383,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "ConnectWise": {
+   "ats": "greenhouse",
+   "open": 42,
+   "fetched": 42,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Sophos": {
+   "ats": "lever",
+   "open": 85,
+   "fetched": 85,
+   "seconds": 1.7,
+   "error": null,
+   "down": null
+  },
+  "ScienceLogic": {
+   "ats": "ashby",
+   "open": 14,
+   "fetched": 14,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Fivetran": {
+   "ats": "greenhouse",
+   "open": 159,
+   "fetched": 159,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Experian": {
+   "ats": "smartrecruiters",
+   "open": 33,
+   "fetched": 33,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Celigo": {
+   "ats": "greenhouse",
+   "open": 20,
+   "fetched": 20,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "NielsenIQ": {
+   "ats": "smartrecruiters",
+   "open": 67,
+   "fetched": 67,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "AlphaSense": {
+   "ats": "greenhouse",
+   "open": 205,
+   "fetched": 205,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "AlphaSense India": {
+   "ats": "greenhouse",
+   "open": 30,
+   "fetched": 30,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Xplor": {
+   "ats": "smartrecruiters",
+   "open": 4,
+   "fetched": 4,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Inovalon": {
+   "ats": "ashby",
+   "open": 38,
+   "fetched": 38,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Mattel": {
+   "ats": "smartrecruiters",
+   "open": 28,
+   "fetched": 28,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Zocdoc": {
+   "ats": "greenhouse",
+   "open": 63,
+   "fetched": 63,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Forbes Advisor": {
+   "ats": "greenhouse",
+   "open": 17,
+   "fetched": 17,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Mirantis": {
+   "ats": "smartrecruiters",
+   "open": 4,
+   "fetched": 4,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "JumpCloud": {
+   "ats": "lever",
+   "open": 43,
+   "fetched": 43,
+   "seconds": 2.1,
+   "error": null,
+   "down": null
+  },
+  "Elsevier": {
+   "ats": "greenhouse",
+   "open": 7,
+   "fetched": 7,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Pocket FM": {
+   "ats": "lever",
+   "open": 12,
+   "fetched": 12,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "66degrees": {
+   "ats": "greenhouse",
+   "open": 19,
+   "fetched": 19,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Jade Global": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Playlist": {
+   "ats": "greenhouse",
+   "open": 32,
+   "fetched": 32,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Cognite": {
+   "ats": "greenhouse",
+   "open": 54,
+   "fetched": 54,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Sigmoid": {
+   "ats": "greenhouse",
+   "open": 45,
+   "fetched": 45,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Anaplan": {
+   "ats": "greenhouse",
+   "open": 163,
+   "fetched": 163,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Entrata": {
+   "ats": "lever",
+   "open": 28,
+   "fetched": 28,
+   "seconds": 2.2,
+   "error": null,
+   "down": null
+  },
+  "Paytm": {
+   "ats": "lever",
+   "open": 199,
+   "fetched": 199,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "TransPerfect": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Zscaler": {
+   "ats": "greenhouse",
+   "open": 362,
+   "fetched": 362,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Sia Partners": {
+   "ats": "smartrecruiters",
+   "open": 18,
+   "fetched": 18,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "WPP": {
+   "ats": "greenhouse",
+   "open": 215,
+   "fetched": 215,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "Altisource": {
+   "ats": "smartrecruiters",
+   "open": 70,
+   "fetched": 70,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Point72": {
+   "ats": "greenhouse",
+   "open": 207,
+   "fetched": 207,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "YipitData": {
+   "ats": "greenhouse",
+   "open": 55,
+   "fetched": 55,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "WeWork India": {
+   "ats": "smartrecruiters",
+   "open": 1,
+   "fetched": 1,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Ethos": {
+   "ats": "greenhouse",
+   "open": 1,
+   "fetched": 1,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Narayana Health": {
+   "ats": "smartrecruiters",
+   "open": 2,
+   "fetched": 2,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Evident": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Rebel Foods": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Thales": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Miratech": {
+   "ats": "smartrecruiters",
+   "open": 74,
+   "fetched": 74,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Altera Corporation": {
+   "ats": "workday",
+   "open": 34,
+   "fetched": 1,
+   "seconds": 2.8,
+   "error": null,
+   "down": null,
+   "listed": 34,
+   "country_filter": true
+  },
+  "Quantiphi Analytics Solutions": {
+   "ats": "workday",
+   "open": 37,
+   "fetched": 4,
+   "seconds": 5.9,
+   "error": null,
+   "down": null,
+   "listed": 37,
+   "country_filter": true
+  },
+  "Dentsu Webchutney": {
+   "ats": "workday",
+   "open": 126,
+   "fetched": 17,
+   "seconds": 21.1,
+   "error": null,
+   "down": null,
+   "listed": 126,
+   "country_filter": true
+  },
+  "Tsys Global Solutions": {
+   "ats": "workday",
+   "open": 37,
+   "fetched": 10,
+   "seconds": 8.4,
+   "error": null,
+   "down": null,
+   "listed": 37,
+   "country_filter": true
+  }
+ },
+ "boards": {
+  "nagaraju": {
+   "counts": {
+    "jobspy-linkedin": 600,
+    "jobspy-naukri": 92
+   },
+   "errors": []
+  },
+  "jhansi": {
+   "counts": {
+    "jobspy-linkedin": 310,
+    "jobspy-naukri": 176
+   },
+   "errors": []
+  },
+  "linkedin_details": {
+   "wanted": 149,
+   "fetched": 149,
+   "with_apply_link": 0,
+   "errors": []
+  }
+ },
+ "problems": [],
+ "new_feeds_discovered": [
+  "Candescent (workday)"
+ ],
+ "summary": {
+  "nagaraju": {
+   "kept": 53,
+   "added_now": 53,
+   "dropped": {
+    "title": 10834,
+    "reported-on-earlier-day": 140,
+    "title-excluded": 620,
+    "old": 780,
+    "location": 577,
+    "duplicate": 264
+   },
+   "no_description": 0,
+   "new_companies": [
+    "ATOSS Software SE",
+    "Aiwf Technologies",
+    "Alignerr",
+    "Ansira",
+    "Antern Technologies",
+    "Apprely Technologies",
+    "Astra Security",
+    "BT Group",
+    "ClanX",
+    "DCC Print Vision",
+    "Dassault Systèmes",
+    "Datavruti.com",
+    "Deloitte",
+    "Duruper",
+    "Ericsson",
+    "Grant Thornton",
+    "HYrEzy Tech Solutions",
+    "Itron, Inc.",
+    "Linde@India",
+    "Miamin Systems",
+    "Millennium",
+    "Mphasis",
+    "Multi Recruit",
+    "Philips",
+    "Q2",
+    "Qrata",
+    "Quantiphi",
+    "Quixta",
+    "S A S Servizio",
+    "Schneider Electric",
+    "Securonix",
+    "SuperPe Marketplace Private Limited",
+    "TalentRabbit",
+    "Tesco Bengaluru",
+    "Tesco Technology",
+    "Trane Technologies",
+    "UST",
+    "VidvanConnect Software and Solutions Private Limited",
+    "Walmart Global Tech India",
+    "Whatfix",
+    "YASH Technologies Middle East",
+    "Zensar Technologies",
+    "bswift",
+    "super.money"
+   ]
+  },
+  "jhansi": {
+   "kept": 35,
+   "added_now": 35,
+   "dropped": {
+    "title": 12693,
+    "old": 94,
+    "reported-on-earlier-day": 50,
+    "location": 23,
+    "title-excluded": 57,
+    "duplicate": 110
+   },
+   "no_description": 1,
+   "new_companies": [
+    "Allegion India",
+    "Amazon Music",
+    "Apexon",
+    "Ascendion",
+    "Ascendion Engineering",
+    "Capgemini",
+    "Cashify",
+    "Coforge",
+    "EloElo",
+    "Epam Systems",
+    "Focus Management Consultants",
+    "ITC Infotech",
+    "Ibridge Techsoft",
+    "Infosys",
+    "Luxoft",
+    "Modern Ballistic",
+    "Neoveda Technologies",
+    "Qualcomm",
+    "Qualitia Software",
+    "Quess IT Solutions",
+    "RADcube",
+    "Scoutit",
+    "Silvermine Group",
+    "Smart Placement Services",
+    "Sunrise Biztech Systems",
+    "TENARAI TECHNOLOGIES PRIVATE LIMITED",
+    "Teamware Solutions",
+    "Warner Music Group",
+    "Wissda Consulting"
+   ]
+  }
+ }
+}
