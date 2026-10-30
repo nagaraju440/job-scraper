@@ -1,0 +1,199 @@
+{
+ "run_at_ist": "2026-10-30T23:07+05:30",
+ "window_hours": 24,
+ "companies": {
+  "NVIDIA": {
+   "ats": "workday",
+   "total_open": 4,
+   "seconds": 6.8,
+   "error": null
+  },
+  "Salesforce": {
+   "ats": "workday",
+   "total_open": 43,
+   "seconds": 32.5,
+   "error": null
+  },
+  "Adobe": {
+   "ats": "workday",
+   "total_open": 1,
+   "seconds": 2.4,
+   "error": null
+  },
+  "Walmart Global Tech": {
+   "ats": "workday",
+   "total_open": 0,
+   "seconds": 0,
+   "error": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://walmart.wd5.myworkdayjobs.com/wday/cxs/walmart/WalmartExternal/jobs"
+  },
+  "PayPal": {
+   "ats": "workday",
+   "total_open": 3,
+   "seconds": 49.2,
+   "error": null
+  },
+  "Mastercard": {
+   "ats": "workday",
+   "total_open": 28,
+   "seconds": 27.6,
+   "error": null
+  },
+  "Target": {
+   "ats": "workday",
+   "total_open": 4,
+   "seconds": 7.1,
+   "error": null
+  },
+  "Autodesk": {
+   "ats": "workday",
+   "total_open": 0,
+   "seconds": 0.8,
+   "error": null
+  },
+  "Workday": {
+   "ats": "workday",
+   "total_open": 2,
+   "seconds": 117.9,
+   "error": null
+  },
+  "Stripe": {
+   "ats": "greenhouse",
+   "total_open": 747,
+   "seconds": 0.5,
+   "error": null
+  },
+  "Databricks": {
+   "ats": "greenhouse",
+   "total_open": 901,
+   "seconds": 0.6,
+   "error": null
+  },
+  "Twilio": {
+   "ats": "greenhouse",
+   "total_open": 133,
+   "seconds": 0.2,
+   "error": null
+  },
+  "Coinbase": {
+   "ats": "greenhouse",
+   "total_open": 242,
+   "seconds": 0.4,
+   "error": null
+  },
+  "Okta": {
+   "ats": "greenhouse",
+   "total_open": 389,
+   "seconds": 0.3,
+   "error": null
+  },
+  "Postman": {
+   "ats": "greenhouse",
+   "total_open": 0,
+   "seconds": 0,
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/postman/jobs?content=true"
+  },
+  "PhonePe": {
+   "ats": "greenhouse",
+   "total_open": 0,
+   "seconds": 0,
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/phonepe/jobs?content=true"
+  },
+  "Groww": {
+   "ats": "greenhouse",
+   "total_open": 9,
+   "seconds": 0.1,
+   "error": null
+  },
+  "Rubrik": {
+   "ats": "greenhouse",
+   "total_open": 157,
+   "seconds": 0.2,
+   "error": null
+  },
+  "Cloudflare": {
+   "ats": "greenhouse",
+   "total_open": 460,
+   "seconds": 0.6,
+   "error": null
+  },
+  "GitLab": {
+   "ats": "greenhouse",
+   "total_open": 238,
+   "seconds": 0.2,
+   "error": null
+  },
+  "MongoDB": {
+   "ats": "greenhouse",
+   "total_open": 368,
+   "seconds": 0.3,
+   "error": null
+  },
+  "Elastic": {
+   "ats": "greenhouse",
+   "total_open": 402,
+   "seconds": 0.5,
+   "error": null
+  },
+  "Meesho": {
+   "ats": "lever",
+   "total_open": 49,
+   "seconds": 0.4,
+   "error": null
+  },
+  "CRED": {
+   "ats": "lever",
+   "total_open": 14,
+   "seconds": 2.5,
+   "error": null
+  },
+  "Zeta": {
+   "ats": "lever",
+   "total_open": 31,
+   "seconds": 0.2,
+   "error": null
+  },
+  "Razorpay": {
+   "ats": "lever",
+   "total_open": 0,
+   "seconds": 0,
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/razorpay?mode=json"
+  },
+  "Notion": {
+   "ats": "ashby",
+   "total_open": 147,
+   "seconds": 0.1,
+   "error": null
+  },
+  "Ramp": {
+   "ats": "ashby",
+   "total_open": 168,
+   "seconds": 0.1,
+   "error": null
+  },
+  "Visa": {
+   "ats": "smartrecruiters",
+   "total_open": 0,
+   "seconds": 0.5,
+   "error": null
+  },
+  "ServiceNow": {
+   "ats": "smartrecruiters",
+   "total_open": 81,
+   "seconds": 0.4,
+   "error": null
+  },
+  "Freshworks": {
+   "ats": "smartrecruiters",
+   "total_open": 35,
+   "seconds": 0.4,
+   "error": null
+  }
+ },
+ "boards": {},
+ "problems": [
+  "Walmart Global Tech (workday): HTTPError: 422 Client Error: Unprocessable Entity for url: https://walmart.wd5.myworkdayjobs.com/wday/cxs/walmart/WalmartExternal/jobs",
+  "Postman (greenhouse): HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/postman/jobs?content=true",
+  "PhonePe (greenhouse): HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/phonepe/jobs?content=true",
+  "Razorpay (lever): HTTPError: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/razorpay?mode=json"
+ ]
+}
