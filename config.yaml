@@ -45,44 +45,290 @@ boards:
   location: 'Bengaluru, Karnataka, India'
   results_per_term: 40
 
-# Company career sites. ats: greenhouse | lever | ashby | smartrecruiters | workday
-# token = the company's board name on that ATS; workday uses the careers-site url.
-# STARTER LIST - every entry is checked on the first GitHub run (--validate) and
-# fixed or replaced; it then grows from the companies in past trackers.
+# Company career sites. ats: greenhouse | lever | ashby | smartrecruiters (token = board name)
+# | workday (url = careers site) | oracle (url + site) | eightfold (url + domain) | amazon.
+# Built from the starter list plus every career site seen in past trackers. Feeds found
+# automatically through LinkedIn/Naukri/Google apply links are added to discovered.yaml.
 companies:
-  # --- Workday
-  - {name: NVIDIA,      ats: workday, url: 'https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite', search: ['software engineer India']}
-  - {name: Salesforce,  ats: workday, url: 'https://salesforce.wd12.myworkdayjobs.com/External_Career_Site', search: ['software engineer India']}
-  - {name: Adobe,       ats: workday, url: 'https://adobe.wd5.myworkdayjobs.com/external_experienced', search: ['software engineer India']}
-  - {name: Walmart Global Tech, ats: workday, url: 'https://walmart.wd5.myworkdayjobs.com/WalmartExternal', search: ['software engineer India']}
-  - {name: PayPal,      ats: workday, url: 'https://paypal.wd1.myworkdayjobs.com/jobs', search: ['software engineer India']}
-  - {name: Mastercard,  ats: workday, url: 'https://mastercard.wd1.myworkdayjobs.com/CorporateCareers', search: ['software engineer India']}
-  - {name: Target,      ats: workday, url: 'https://target.wd5.myworkdayjobs.com/targetcareers', search: ['engineer India']}
-  - {name: Autodesk,    ats: workday, url: 'https://autodesk.wd1.myworkdayjobs.com/Ext', search: ['software engineer India']}
-  - {name: Workday,     ats: workday, url: 'https://workday.wd5.myworkdayjobs.com/Workday', search: ['software engineer India']}
-  # --- Greenhouse
-  - {name: Stripe,      ats: greenhouse, token: stripe}
-  - {name: Databricks,  ats: greenhouse, token: databricks}
-  - {name: Twilio,      ats: greenhouse, token: twilio}
-  - {name: Coinbase,    ats: greenhouse, token: coinbase}
-  - {name: Okta,        ats: greenhouse, token: okta}
-  - {name: Postman,     ats: greenhouse, token: postman}
-  - {name: PhonePe,     ats: greenhouse, token: phonepe}
-  - {name: Groww,       ats: greenhouse, token: groww}
-  - {name: Rubrik,      ats: greenhouse, token: rubrik}
-  - {name: Cloudflare,  ats: greenhouse, token: cloudflare}
-  - {name: GitLab,      ats: greenhouse, token: gitlab}
-  - {name: MongoDB,     ats: greenhouse, token: mongodb}
-  - {name: Elastic,     ats: greenhouse, token: elastic}
-  # --- Lever
-  - {name: Meesho,      ats: lever, token: meesho}
-  - {name: CRED,        ats: lever, token: cred}
-  - {name: Zeta,        ats: lever, token: zeta}
-  - {name: Razorpay,    ats: lever, token: razorpay}
-  # --- Ashby
-  - {name: Notion,      ats: ashby, token: notion}
-  - {name: Ramp,        ats: ashby, token: ramp}
-  # --- SmartRecruiters
-  - {name: Visa,        ats: smartrecruiters, token: Visa}
-  - {name: ServiceNow,  ats: smartrecruiters, token: ServiceNow}
-  - {name: Freshworks,  ats: smartrecruiters, token: Freshworks}
+- name: NVIDIA
+  ats: workday
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
+- name: Salesforce
+  ats: workday
+  url: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site
+- name: Adobe
+  ats: workday
+  url: https://adobe.wd5.myworkdayjobs.com/external_experienced
+- name: Walmart Global Tech
+  ats: workday
+  url: https://walmart.wd5.myworkdayjobs.com/WalmartExternal
+- name: PayPal
+  ats: workday
+  url: https://paypal.wd1.myworkdayjobs.com/jobs
+- name: Mastercard
+  ats: workday
+  url: https://mastercard.wd1.myworkdayjobs.com/CorporateCareers
+- name: Target
+  ats: workday
+  url: https://target.wd5.myworkdayjobs.com/targetcareers
+- name: Autodesk
+  ats: workday
+  url: https://autodesk.wd1.myworkdayjobs.com/Ext
+- name: Workday
+  ats: workday
+  url: https://workday.wd5.myworkdayjobs.com/Workday
+- name: Stripe
+  ats: greenhouse
+  token: stripe
+- name: Databricks
+  ats: greenhouse
+  token: databricks
+- name: Twilio
+  ats: greenhouse
+  token: twilio
+- name: Coinbase
+  ats: greenhouse
+  token: coinbase
+- name: Okta
+  ats: greenhouse
+  token: okta
+- name: Postman
+  ats: workday
+  url: https://postman.wd108.myworkdayjobs.com/careers
+- name: PhonePe
+  ats: smartrecruiters
+  token: PHONEPELIMITED
+- name: Groww
+  ats: greenhouse
+  token: groww
+- name: Rubrik
+  ats: greenhouse
+  token: rubrik
+- name: Cloudflare
+  ats: greenhouse
+  token: cloudflare
+- name: GitLab
+  ats: greenhouse
+  token: gitlab
+- name: MongoDB
+  ats: greenhouse
+  token: mongodb
+- name: Elastic
+  ats: greenhouse
+  token: elastic
+- name: Meesho
+  ats: lever
+  token: meesho
+- name: CRED
+  ats: lever
+  token: cred
+- name: Zeta
+  ats: lever
+  token: zeta
+- name: Razorpay
+  ats: greenhouse
+  token: razorpaysoftwareprivatelimited
+- name: Notion
+  ats: ashby
+  token: notion
+- name: Ramp
+  ats: ashby
+  token: ramp
+- name: Visa
+  ats: workday
+  url: https://visa.wd5.myworkdayjobs.com/Visa
+- name: ServiceNow
+  ats: smartrecruiters
+  token: ServiceNow
+- name: Freshworks
+  ats: smartrecruiters
+  token: Freshworks
+- name: Microsoft
+  ats: eightfold
+  url: https://apply.careers.microsoft.com
+  domain: microsoft.com
+- name: Amazon
+  ats: amazon
+- name: Ford Motor Company
+  ats: oracle
+  url: https://efds.fa.em5.oraclecloud.com
+  site: CX_1
+- name: DP World
+  ats: oracle
+  url: https://ehpv.fa.em2.oraclecloud.com
+  site: CX_1
+- name: Ralliant
+  ats: oracle
+  url: https://ibwujb.fa.ocs.oraclecloud.com
+  site: CX_1001
+- name: HighLevel
+  ats: lever
+  token: gohighlevel
+- name: Newfold Digital
+  ats: workday
+  url: https://web.wd1.myworkdayjobs.com/ExternalCareerSite
+- name: Aspen Technology
+  ats: workday
+  url: https://aspentech.wd5.myworkdayjobs.com/AspenTech
+- name: CrowdStrike
+  ats: workday
+  url: https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers
+- name: Backbase
+  ats: greenhouse
+  token: workatbackbase
+- name: Levi Strauss & Co.
+  ats: workday
+  url: https://levistraussandco.wd5.myworkdayjobs.com/External
+- name: Cohere Health
+  ats: greenhouse
+  token: coherehealth
+- name: bp
+  ats: workday
+  url: https://bpinternational.wd3.myworkdayjobs.com/bpCareers
+- name: Coursera
+  ats: greenhouse
+  token: coursera
+- name: Airbus
+  ats: workday
+  url: https://ag.wd3.myworkdayjobs.com/Airbus
+- name: The Hartford
+  ats: workday
+  url: https://thehartford.wd5.myworkdayjobs.com/Careers_External
+- name: RELX
+  ats: workday
+  url: https://relx.wd3.myworkdayjobs.com/relx
+- name: Yext
+  ats: greenhouse
+  token: yext
+- name: UiPath
+  ats: ashby
+  token: uipath
+- name: Arctic Wolf
+  ats: workday
+  url: https://arcticwolf.wd1.myworkdayjobs.com/External
+- name: Itron
+  ats: workday
+  url: https://itron.wd5.myworkdayjobs.com/Itron
+- name: Gartner
+  ats: workday
+  url: https://gartner.wd5.myworkdayjobs.com/EXT
+- name: NCR Voyix
+  ats: workday
+  url: https://ncr.wd1.myworkdayjobs.com/ext_apac
+- name: SOTI
+  ats: workday
+  url: https://soti.wd3.myworkdayjobs.com/Careers
+- name: G-P
+  ats: greenhouse
+  token: globalizationpartners
+- name: Fanatics Commerce
+  ats: greenhouse
+  token: fanaticscommerce
+- name: Stryker
+  ats: workday
+  url: https://stryker.wd1.myworkdayjobs.com/StrykerCareers
+- name: SupplyHouse.com
+  ats: greenhouse
+  token: supplyhouse
+- name: Qualys
+  ats: workday
+  url: https://qualys.wd5.myworkdayjobs.com/Careers
+- name: SonicWall
+  ats: greenhouse
+  token: sonicwall
+- name: Headout
+  ats: greenhouse
+  token: headoutcareers
+- name: Agilon Health
+  ats: workday
+  url: https://agilonhealth.wd1.myworkdayjobs.com/External
+- name: Rakuten Symphony
+  ats: workday
+  url: https://rakuten.wd1.myworkdayjobs.com/RakutenSymphony
+- name: Curriculum Associates
+  ats: workday
+  url: https://curriculumassociates.wd5.myworkdayjobs.com/External
+- name: OpenGov
+  ats: ashby
+  token: opengov
+- name: Crunchyroll
+  ats: greenhouse
+  token: crunchyroll
+- name: Wells Fargo
+  ats: workday
+  url: https://wd1.myworkdaysite.com/recruiting/wf/WellsFargoJobs
+- name: U.S. Bank
+  ats: workday
+  url: https://usbank.wd1.myworkdayjobs.com/US_Bank_Careers
+- name: Capital One
+  ats: workday
+  url: https://capitalone.wd12.myworkdayjobs.com/Capital_One
+- name: GE HealthCare
+  ats: workday
+  url: https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite
+- name: PUMA
+  ats: workday
+  url: https://puma.wd502.myworkdayjobs.com/Jobs_at_Puma
+- name: MSD
+  ats: workday
+  url: https://msd.wd5.myworkdayjobs.com/SearchJobs
+- name: Bristol Myers Squibb
+  ats: workday
+  url: https://bristolmyerssquibb.wd5.myworkdayjobs.com/BMS
+- name: Renesas Electronics
+  ats: smartrecruiters
+  token: RenesasElectronics
+- name: tiket.com
+  ats: workday
+  url: https://tiketdotcom.wd3.myworkdayjobs.com/Tiket_Careers
+- name: Bosch
+  ats: smartrecruiters
+  token: BoschGroup
+- name: H&M
+  ats: smartrecruiters
+  token: HMGroup
+- name: Procore
+  ats: workday
+  url: https://procore.wd12.myworkdayjobs.com/Procore_External_Careers
+- name: Guardian Life Insurance
+  ats: workday
+  url: https://guardianlife.wd5.myworkdayjobs.com/Guardian-Life-Careers
+- name: ClickHouse
+  ats: ashby
+  token: clickhouse
+- name: Fox Corporation
+  ats: workday
+  url: https://fox.wd1.myworkdayjobs.com/Domestic
+- name: A.P. Moller - Maersk
+  ats: workday
+  url: https://maersk.wd3.myworkdayjobs.com/Maersk_Careers
+- name: Light & Wonder
+  ats: workday
+  url: https://lnw.wd5.myworkdayjobs.com/LightWonderExternalCareers
+- name: Nike
+  ats: workday
+  url: https://nike.wd1.myworkdayjobs.com/nke
+- name: FactSet
+  ats: workday
+  url: https://factset.wd108.myworkdayjobs.com/FactSetCareers
+- name: Citi
+  ats: workday
+  url: https://citi.wd5.myworkdayjobs.com/2
+- name: eBay
+  ats: workday
+  url: https://ebay.wd5.myworkdayjobs.com/apply
+- name: Snowflake
+  ats: ashby
+  token: snowflake
+- name: Blue Yonder
+  ats: workday
+  url: https://jda.wd5.myworkdayjobs.com/JDA_Careers
+- name: Nextpower
+  ats: workday
+  url: https://nextracker.wd5.myworkdayjobs.com/nextpower_careers
+- name: Barclays
+  ats: workday
+  url: https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays
+- name: Blackbaud
+  ats: workday
+  url: https://blackbaud.wd1.myworkdayjobs.com/ExternalCareers
