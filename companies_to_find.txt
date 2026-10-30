@@ -1,0 +1,436 @@
+# past companies without a known feed (jobs first)
+NetApp
+Walmart Global Tech India
+Cvent
+Cisco
+Safe Security
+Google
+Ellucian
+QAD
+Hinge Health
+LeadSquared
+Platform Science
+BNY
+Deel
+Honeywell Technologies
+ZoomInfo
+iManage
+Cimpress India
+Pearson
+IDFC FIRST Bank
+ChargePoint
+Palo Alto Networks
+First American (India)
+PW (PhysicsWallah)
+Agoda
+Schneider Electric
+GoDaddy
+WeWork India
+Purplle.com
+Zillow
+Americana Restaurants
+7-Eleven Global Solution Center - India
+The Access Group
+UPS
+Standard Chartered India
+Comviva
+Diligent
+RIB Software
+PAR Technology
+Roche
+upGrad
+Qatar Airways
+State Street
+Bain & Company
+slice
+Blackhawk Network
+Synopsys
+PowerSchool
+Empower India
+JLL
+ICE
+Optum India
+NETGEAR
+Franklin Templeton
+Atlas Copco Group
+SpotOn
+MillerKnoll
+Neighborly
+athenahealth
+Genesys
+Albertsons Companies India
+Broadridge India
+Deutsche Bank
+Commonwealth Bank
+Navan
+GE Vernova
+JPMorganChase
+Thermo Fisher Scientific
+Wolters Kluwer
+Ethos
+Aristocrat
+IGT
+Amgen
+Planview
+LinkedIn
+Endpoint Clinical
+algoleap
+Principal Global Services
+Apple
+Cashfree Payments
+Stellantis
+Check Point Software
+Trintech
+IDfy
+American Express Global Business Travel
+Ingersoll Rand
+Conde Nast
+DataFlow Group
+Philips
+The Hershey Company
+Moody's Ratings
+Macquarie Group
+Servify
+Narayana Health
+KSB Company
+Johnson & Johnson Innovative Medicine
+Evident Microscopy
+Livspace
+Foodsmart
+AlmaBetter
+Cornerstone OnDemand
+Syensqo
+OpenGov Inc.
+Barco
+Classplus
+SS&C Technologies
+FIS
+Warner Bros. Discovery
+LSEG
+Baker Hughes
+PHINIA
+Copart
+TeamViewer
+InCred Financial Services
+SolarWinds
+Cummins India
+BOLD
+Applied Materials India
+GoKwik
+Aurora Energy Research
+Collins Aerospace
+NiCE
+SolarSquare
+BetaNXT
+Providence India
+Atolls
+Rebel Foods
+US Pharmacopeia
+Meril
+Nokia
+Agilent Technologies
+Expedia Group
+WeRize
+Barracuda
+Regal Rexnord
+Atlassian
+Esko
+Menlo Security Inc.
+Synchrony
+Alter Domus
+Thales
+Thomson Reuters
+Talent Systems, LLC
+Converse
+ixigo
+Infineon Technologies
+IQVIA
+Fanatics
+Azuga, Inc.
+Medline
+Zebra Technologies
+Upland Software
+RX Global
+Yulu
+Weave
+OnePay
+Sonatype
+DNV
+Foodhub
+Bank of America
+Emerson
+AVEVA
+Porter
+McCormick & Company
+Cognyte
+Dow
+Nextiva
+DAZN
+Vanguard
+Talent Systems
+One Identity
+Anglo-Eastern Ship Management
+Abnormal
+Walmart
+BNY Mellon
+Principal Global Services (Principal Financial Group)
+WEX
+Guardian Life
+ABB
+PepsiCo
+Emmes Group
+Electrolux Group
+Linedata
+VOIS
+Chargebee
+Xometry
+SimCorp
+BNP Paribas
+Societe Generale Global Solution Centre
+Epsilon
+Rippling
+Realpage
+Infor
+SimpliSafe
+Equinix
+Zendesk
+Morningstar
+4flow
+Poppulo
+American Express
+Nasdaq
+Juniper Square
+DBS Bank
+Dover India
+OneTrust
+CSC
+Greenway Health
+Siemens Healthineers
+Applied Materials
+Smiths Group
+Siemens
+DHL Information Services
+Annalect (Omnicom Media Group)
+JPMorgan Chase
+Euromonitor
+Generac
+Cleo (India)
+Fidelity Investments
+dentsu
+Eli Lilly and Company
+symplr
+Latinem Private Limited
+SmartBear
+DigiCert
+Teradata
+Sequoia
+Qualcomm
+JioStar
+Emirates NBD
+Strategy (MicroStrategy)
+Payoneer
+Rapido
+Harris Computer
+BlinkRx
+Solera Holdings, LLC.
+Vertafore
+Larsen & Toubro
+HSBC
+Arrive
+Galaxy
+TransUnion
+Numerator
+Candescent
+Instawork
+DAT Freight & Analytics
+Pepper
+Harvey
+Google DeepMind
+N-able
+Corpay
+Accendra Health
+Glean
+ConnectWise
+Lenovo
+Sophos
+Group Bayport
+Movado Group, Inc
+SCIENTIFIC GAMES
+NatWest Group
+ScienceLogic
+Bharti Airtel Foundation
+Fivetran
+Analog Devices
+Strategy
+Experian
+HealthEdge
+X-Rite
+Celigo
+Siemens Energy
+Toppan Merrill
+NielsenIQ
+EdgeVerve
+Seismic
+Google Operations Center
+Thinkproject
+McDermott International, Ltd
+AlphaSense
+Marsh
+Paisabazaar
+PUMA Group
+Clean Harbors
+Xplor Technologies
+ThoughtSpot
+Inovalon
+MiQ
+Mattel, Inc.
+Zocdoc
+Vena Solutions
+Abnormal AI
+Valeo
+Alegeus
+Novartis India
+Aptiv (Wind River)
+Nemetschek Group
+Electronic Arts (EA)
+ReNew
+Everpure
+Forbes Advisor
+Mirantis
+JumpCloud
+Elsevier
+D. E. Shaw India Private Limited
+Allstate India
+Exotel
+Principal Financial Group
+Equiti Group
+Sapiens
+Kumaran Systems
+Fidelity International
+Priceline
+Pocket FM
+Ameriprise Financial Services, LLC
+Disney Experiences
+66degrees
+Valmont Industries, Inc.
+KKR
+Johnson Controls
+Jade Global
+Sabre
+Verisk
+Playlist
+Hitachi Energy
+Infios
+ACI Worldwide
+Trimble Inc.
+Broadcom
+Strada
+Dentsu Global Services
+SailPoint
+Cognite - AI for Industry
+TeamViewer Germany GmbH
+Sigmoid
+Providence Global Center
+Elevance Health
+Bentley Systems
+JPMorgan Chase & Co.
+OneMagnify
+Docusign
+SRM Technologies
+U.S. Bank National Association
+SLB
+Avalara
+GXS India Technology Centre Pvt Ltd
+Anaplan
+RBS
+UKG
+Bayer
+BlackRock
+Finastra
+ParentPay Group
+Securonix
+Mimecast
+Cigna Group / Cigna Healthcare
+Medtronic
+Zoetis
+Pitney Bowes
+Firstsource
+Ness Digital Engineering
+Entrata
+Jefferies
+AstraZeneca
+Renesas
+Cactus Wellhead
+Motorola Solutions
+UnitedHealth Group
+Global Payments Inc.
+Intel
+Intercontinental Exchange
+Boston Consulting Group
+Bloomberg
+Merck KGaA (Darmstadt)
+Netsmart
+Syneos Health
+Wipfli Advisory
+Siemens / Siemens Healthineers
+Chubb Fire & Security
+Adani Group
+Corning
+Paytm
+ZEISS Group
+Honeywell
+Fortive
+Nomura Holdings
+HD Supply GDS
+AGCO
+Coursera (rehire board)
+TransPerfect
+Bosch Group
+Teladoc Health
+Hitachi
+AT&T
+ABC Financial Services
+Zscaler
+First American
+Nomura
+Kaplan
+AgileEngine
+Veralto Global
+MFSG Technologies / Momentum Financial
+NOV Inc.
+McKesson
+Mattel
+Sia
+Nestle Operational Services
+The Chemours Company
+Maersk
+Elevance Health (Carelon)
+NAVEX
+Caterpillar
+MediaKind
+JoVE
+NICE
+Beghou
+Amazon PCT
+ABC Fitness
+Global Payments
+ExxonMobil
+Ansira
+WPP
+Altisource
+NCR Atleos
+KONE
+Movado
+Point72
+Chegg
+Huron
+Avaya
+GSK
+General Mills
+Millennium
+Greenlight Financial Technology
+Mott MacDonald
+YipitData
+KLA
+Cadence Design Systems
+Rocket India
