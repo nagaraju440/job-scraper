@@ -1,0 +1,45 @@
+name: daily-job-scrape
+
+on:
+  schedule:
+    - cron: '17 0 * * *'   # 05:47 IST every day
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: 'Window in hours (24 normal, 48/72 to catch up)'
+        default: '24'
+      mode:
+        description: 'run or validate'
+        default: 'run'
+
+permissions:
+  contents: write
+
+concurrency: daily-job-scrape
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Scrape
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "validate" ]; then
+            python -m scraper.run --validate
+          else
+            python -m scraper.run --hours "${{ github.event.inputs.hours || '24' }}"
+          fi
+      - name: Save results to the repo
+        if: always()
+        run: |
+          git config user.name "job-scraper-bot"
+          git config user.email "job-scraper-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "jobs $(TZ=Asia/Kolkata date +%F)"
+          git push
