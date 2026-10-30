@@ -2,25 +2,24 @@ name: daily-job-scrape
 
 on:
   schedule:
-    - cron: '17 0 * * *'   # 05:47 IST every day
+    - cron: '17 0 * * *'   # 05:47 IST - main run
+    - cron: '47 2 * * *'   # 08:17 IST - retry only the feeds that were down/failed
   workflow_dispatch:
     inputs:
       hours:
         description: 'Window in hours (24 normal, 48/72 to catch up)'
         default: '24'
       mode:
-        description: 'run or validate'
+        description: 'run, retry, validate or find'
         default: 'run'
 
 permissions:
   contents: write
 
-concurrency: daily-job-scrape
-
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,17 +28,28 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Scrape
+        env:
+          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || 'run') }}
+          HOURS: ${{ github.event.inputs.hours || '24' }}
         run: |
-          if [ "${{ github.event.inputs.mode }}" = "validate" ]; then
-            python -m scraper.run --validate
-          else
-            python -m scraper.run --hours "${{ github.event.inputs.hours || '24' }}"
-          fi
+          case "$MODE" in
+            validate) python -m scraper.run --validate ;;
+            retry)    python -m scraper.run --retry-failed ;;
+            find)     python -m scraper.find_feeds companies_to_find.txt ;;
+            *)        python -m scraper.run --hours "$HOURS" ;;
+          esac
       - name: Save results to the repo
         if: always()
         run: |
           git config user.name "job-scraper-bot"
           git config user.email "job-scraper-bot@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "jobs $(TZ=Asia/Kolkata date +%F)"
-          git push
+          git add data/ discovered.yaml 2>/dev/null || git add data/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "jobs $(TZ=Asia/Kolkata date +%F) ($MODE)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
+        env:
+          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || 'run') }}
