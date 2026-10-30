@@ -21,8 +21,11 @@ profiles:
     board_terms:
       - 'senior software engineer node.js typescript'
       - 'full stack engineer react node'
-      - 'backend engineer nestjs'
+      - 'backend engineer node.js'
+      - 'nestjs developer'
       - 'SDE 2 full stack'
+      - 'software engineer II typescript'
+      - 'frontend engineer react next.js'
       - 'tech lead node.js react'
 
   # Jhansi: QA automation roles.
@@ -37,13 +40,16 @@ profiles:
       - 'QA automation engineer selenium java'
       - 'SDET'
       - 'automation test engineer cypress playwright'
+      - 'test automation engineer'
+      - 'QA engineer automation API testing'
 
-# LinkedIn / Naukri / Google Jobs via JobSpy, for companies not listed below.
+# LinkedIn / Naukri via JobSpy, for companies not listed below. (Google Jobs blocks
+# GitHub's servers and was never part of the old pipeline, so it is not used.)
 boards:
   enabled: true
-  sites: [linkedin, naukri, google]
+  sites: [linkedin, naukri]
   location: 'Bengaluru, Karnataka, India'
-  results_per_term: 40
+  results_per_term: 75
 
 # Company career sites. ats: greenhouse | lever | ashby | smartrecruiters (token = board name)
 # | workday (url = careers site) | oracle (url + site) | eightfold (url + domain) | amazon.
@@ -59,9 +65,6 @@ companies:
 - name: Adobe
   ats: workday
   url: https://adobe.wd5.myworkdayjobs.com/external_experienced
-- name: Walmart Global Tech
-  ats: workday
-  url: https://walmart.wd5.myworkdayjobs.com/WalmartExternal
 - name: PayPal
   ats: workday
   url: https://paypal.wd1.myworkdayjobs.com/jobs
@@ -332,3 +335,226 @@ companies:
 - name: Blackbaud
   ats: workday
   url: https://blackbaud.wd1.myworkdayjobs.com/ExternalCareers
+# --- resolved by the feed finder (name checked against the board), 2026-10-31
+- name: Walmart Global Tech
+  ats: smartrecruiters
+  token: walmartinc
+- name: QAD
+  ats: smartrecruiters
+  token: qadinc
+- name: Platform Science
+  ats: greenhouse
+  token: platformscience
+- name: ZoomInfo
+  ats: greenhouse
+  token: zoominfo
+- name: iManage
+  ats: greenhouse
+  token: imanage
+- name: ChargePoint
+  ats: greenhouse
+  token: chargepoint
+- name: Agoda
+  ats: greenhouse
+  token: agoda
+- name: GoDaddy
+  ats: greenhouse
+  token: godaddy
+- name: Diligent
+  ats: greenhouse
+  token: diligent
+- name: Hinge Health
+  ats: ashby
+  token: hinge-health
+- name: NETGEAR
+  ats: ashby
+  token: netgear
+- name: SpotOn
+  ats: ashby
+  token: spoton
+- name: Endpoint Clinical
+  ats: lever
+  token: endpointclinical
+- name: Foodsmart
+  ats: lever
+  token: foodsmart
+- name: SolarWinds
+  ats: greenhouse
+  token: solarwinds
+- name: NICE
+  ats: greenhouse
+  token: nice
+- name: Atolls
+  ats: greenhouse
+  token: atolls
+- name: Menlo Security
+  ats: ashby
+  token: menlosecurity
+- name: ixigo
+  ats: smartrecruiters
+  token: ixigo
+- name: Fanatics
+  ats: greenhouse
+  token: fanaticsinc
+- name: Sonatype
+  ats: lever
+  token: sonatype
+- name: Porter
+  ats: lever
+  token: porter
+- name: Nextiva
+  ats: greenhouse
+  token: nextiva
+- name: Xometry
+  ats: greenhouse
+  token: xometry
+- name: SimpliSafe
+  ats: greenhouse
+  token: simplisafe
+- name: Poppulo
+  ats: greenhouse
+  token: poppulo
+- name: Nasdaq
+  ats: greenhouse
+  token: nasdaq
+- name: Juniper Square
+  ats: ashby
+  token: junipersquare
+- name: OneTrust
+  ats: greenhouse
+  token: onetrust
+- name: Cleo (India)
+  ats: greenhouse
+  token: cleoindia
+- name: SmartBear
+  ats: greenhouse
+  token: smartbear
+- name: DigiCert
+  ats: greenhouse
+  token: digicert
+- name: Payoneer
+  ats: greenhouse
+  token: payoneer
+- name: Instawork
+  ats: greenhouse
+  token: instawork
+- name: Harvey
+  ats: ashby
+  token: harvey
+- name: ConnectWise
+  ats: greenhouse
+  token: connectwise
+- name: Sophos
+  ats: lever
+  token: sophos
+- name: ScienceLogic
+  ats: ashby
+  token: sciencelogic
+- name: Fivetran
+  ats: greenhouse
+  token: fivetran
+- name: Experian
+  ats: smartrecruiters
+  token: experian
+- name: Celigo
+  ats: greenhouse
+  token: celigo
+- name: NielsenIQ
+  ats: smartrecruiters
+  token: nielseniq
+- name: AlphaSense
+  ats: greenhouse
+  token: alphasense
+- name: AlphaSense India
+  ats: greenhouse
+  token: alphasenseindia
+- name: Xplor
+  ats: smartrecruiters
+  token: xplor
+- name: Inovalon
+  ats: ashby
+  token: inovalon
+- name: Mattel
+  ats: smartrecruiters
+  token: mattelinc
+- name: Zocdoc
+  ats: greenhouse
+  token: zocdoc
+- name: Forbes Advisor
+  ats: greenhouse
+  token: forbes
+- name: Mirantis
+  ats: smartrecruiters
+  token: mirantis
+- name: JumpCloud
+  ats: lever
+  token: jumpcloud
+- name: Elsevier
+  ats: greenhouse
+  token: elsevier
+- name: Pocket FM
+  ats: lever
+  token: pocketfm
+- name: 66degrees
+  ats: greenhouse
+  token: 66degrees
+- name: Jade Global
+  ats: smartrecruiters
+  token: jadeglobal
+- name: Playlist
+  ats: greenhouse
+  token: playlist
+- name: Cognite
+  ats: greenhouse
+  token: cognite
+- name: Sigmoid
+  ats: greenhouse
+  token: sigmoid
+- name: Anaplan
+  ats: greenhouse
+  token: anaplan
+- name: Entrata
+  ats: lever
+  token: entrata
+- name: Paytm
+  ats: lever
+  token: paytm
+- name: TransPerfect
+  ats: smartrecruiters
+  token: transperfect
+- name: Zscaler
+  ats: greenhouse
+  token: zscaler
+- name: Sia Partners
+  ats: smartrecruiters
+  token: sia
+- name: WPP
+  ats: greenhouse
+  token: wpp
+- name: Altisource
+  ats: smartrecruiters
+  token: altisource
+- name: Point72
+  ats: greenhouse
+  token: point72
+- name: YipitData
+  ats: greenhouse
+  token: yipitdata
+- name: WeWork India
+  ats: smartrecruiters
+  token: wework
+- name: Ethos
+  ats: greenhouse
+  token: ethos
+- name: Narayana Health
+  ats: smartrecruiters
+  token: narayanahealth
+- name: Evident
+  ats: smartrecruiters
+  token: evident
+- name: Rebel Foods
+  ats: smartrecruiters
+  token: rebelfoods
+- name: Thales
+  ats: smartrecruiters
+  token: thales
