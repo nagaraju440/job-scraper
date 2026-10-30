@@ -50,6 +50,8 @@ boards:
   sites: [linkedin, naukri]
   location: 'Bengaluru, Karnataka, India'
   results_per_term: 75
+  max_minutes: 40       # time budget for the LinkedIn/Naukri searches
+  details_minutes: 20   # extra budget for LinkedIn descriptions of jobs that pass the filter
 
 # Company career sites. ats: greenhouse | lever | ashby | smartrecruiters (token = board name)
 # | workday (url = careers site) | oracle (url + site) | eightfold (url + domain) | amazon.
