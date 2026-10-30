@@ -5,7 +5,7 @@ Free daily job feed for Nagaraju's and Jhansi's job-search scheduled tasks (repl
 - **Runs on GitHub Actions** (`.github/workflows/daily.yml`): 05:47 IST main run, 08:17 IST retry of any company site that was down.
 - **Sources**
   - ~170 company career sites: Workday, Greenhouse, Lever, Ashby, SmartRecruiters, Oracle Cloud, Eightfold (Microsoft) and Amazon (`scraper/ats.py`, list in `config.yaml`).
-  - LinkedIn and Naukri via [JobSpy](https://github.com/speedyapply/JobSpy) (`scraper/boards.py`). LinkedIn descriptions and the company's own apply link are fetched only for jobs that pass the filter.
+  - LinkedIn and Naukri via [JobSpy](https://github.com/speedyapply/JobSpy) (`scraper/boards.py`). LinkedIn descriptions are fetched only for jobs that pass the filter. (LinkedIn no longer shows the company's own apply link to logged-out visitors, so `apply_url` is usually empty for LinkedIn rows; the daily task finds the company posting itself. Naukri rows often carry the company link, which feeds auto-discovery.)
 - **Output**: `data/<YYYY-MM-DD IST>/nagaraju.json`, `jhansi.json` (+ `.csv`) and `health.json`. Only a loose pre-filter is applied (title family, India/remote, last 24h, not reported in the previous 3 days); the Claude scheduled tasks do the real filtering, resumes and referral contacts.
 - **Self-growing**: when a LinkedIn/Naukri apply link points at a supported career site, that company's feed is added to `discovered.yaml` and fetched directly from the next day.
 
