@@ -26,12 +26,12 @@ from pathlib import Path
 import yaml
 
 from .ats import FETCHERS, FeedDown, feed_from_url, feed_key, smartrecruiters_detail
-from .boards import jobspy_search
+from .boards import jobspy_search, linkedin_details
 
 ROOT = Path(__file__).resolve().parent.parent
 IST = timezone(timedelta(hours=5, minutes=30))
 CSV_COLS = ["company", "title", "location", "posted_at", "freshness", "source",
-            "job_id", "url", "new_company"]
+            "job_id", "url", "apply_url", "new_company"]
 
 
 def norm(s):
@@ -128,6 +128,63 @@ def fetch_all(companies, hours, health):
     return jobs_out
 
 
+
+def write_profiles(cfg, all_jobs, names, outdir, today, since, retry):
+    """Loose per-profile filter, de-duplication and the json/csv outputs. Returns the summary."""
+    known = {norm(n) for n in names}
+    summary = {}
+    for prof_name, prof in cfg["profiles"].items():
+        seen_before = recent_seen(prof_name, today)
+        existing = []
+        pf = outdir / f"{prof_name}.json"
+        if retry and pf.exists():
+            existing = json.loads(pf.read_text())
+        kept, reasons, keys = list(existing), {}, {j["key"] for j in existing}
+        # career-site rows first so they win the dedupe over job-board copies
+        for j in sorted(all_jobs, key=lambda x: x["source"].startswith("jobspy")):
+            if j.get("_profile_hint") not in (None, prof_name):
+                continue
+            orig, j = j, dict(j)
+            ok, why = matches(j, prof, since)
+            if not ok:
+                reasons[why] = reasons.get(why, 0) + 1
+                continue
+            key = job_key(j)
+            if key in keys:
+                reasons["duplicate"] = reasons.get("duplicate", 0) + 1
+                continue
+            keys.add(key)
+            if key in seen_before:
+                reasons["reported-on-earlier-day"] = reasons.get("reported-on-earlier-day", 0) + 1
+                continue
+            if j["source"] == "smartrecruiters" and not j.get("description"):
+                try:
+                    smartrecruiters_detail(j)
+                    orig["description"] = j["description"]  # cache: fetched once per run
+                    orig.pop("_detail", None)
+                except Exception as e:
+                    j["description_error"] = f"{type(e).__name__}"
+            j.pop("_detail", None)
+            j.pop("_profile_hint", None)
+            j["key"] = key
+            j["new_company"] = j["source"].startswith("jobspy") and norm(j["company"]) not in known
+            if not j.get("description"):
+                j["description_missing"] = True
+            kept.append(j)
+        kept.sort(key=lambda x: str(x.get("posted_at") or ""), reverse=True)
+        pf.write_text(json.dumps(kept, indent=1, ensure_ascii=False))
+        with open(outdir / f"{prof_name}.csv", "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=CSV_COLS, extrasaction="ignore")
+            w.writeheader()
+            w.writerows(kept)
+        summary[prof_name] = {"kept": len(kept), "added_now": len(kept) - len(existing),
+                              "dropped": reasons,
+                              "no_description": sum(1 for j in kept if j.get("description_missing")),
+                              "new_companies": sorted({j["company"] for j in kept if j.get("new_company")})}
+
+    return summary
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hours", type=int, default=None)
@@ -184,12 +241,19 @@ def main():
             print("  BAD:", n, health["companies"][n])
         return 0
 
+    # checkpoint: career-site results are saved now, so a later crash/timeout never loses them
+    if not a.retry_failed:
+        partial = write_profiles(cfg, all_jobs, names, outdir, today, since, False)
+        (outdir / "health.json").write_text(json.dumps(
+            {**health, "phase": "career sites done - job boards still running", "summary": partial}, indent=1))
+
     # ---- job boards (discovery) - not repeated on a retry run
     if not a.retry_failed and not a.no_boards and cfg.get("boards", {}).get("enabled", True):
         b = cfg["boards"]
+        deadline = time.time() + 60 * b.get("max_minutes", 40)
         for prof_name, prof in cfg["profiles"].items():
             jobs, errs = jobspy_search(b["sites"], prof["board_terms"], b["location"],
-                                       hours, b["results_per_term"])
+                                       hours, b["results_per_term"], deadline=deadline)
             for j in jobs:
                 j["_profile_hint"] = prof_name
             all_jobs.extend(jobs)
@@ -201,6 +265,25 @@ def main():
                 if counts.get(f"jobspy-{s}", 0) == 0:
                     health["problems"].append(f"{prof_name}: {s} returned 0 jobs {errs[:1]}")
 
+        # LinkedIn: description + company apply link only for jobs that pass the loose filter
+        want = {}
+        for j in all_jobs:
+            if j["source"] == "jobspy-linkedin" and not j.get("description"):
+                prof = cfg["profiles"].get(j.get("_profile_hint"))
+                if prof and matches(dict(j), prof, since)[0]:
+                    want.setdefault(j["job_id"], []).append(j)
+        got, errs = linkedin_details(list(want), deadline=deadline + 60 * b.get("details_minutes", 20))
+        for jid, (desc, apply_url) in got.items():
+            for j in want[jid]:
+                j["description"] = desc
+                if apply_url:
+                    j["apply_url"] = apply_url
+        health["boards"]["linkedin_details"] = {"wanted": len(want), "fetched": len(got),
+                                                "with_apply_link": sum(1 for v in got.values() if v[1]),
+                                                "errors": errs[:10]}
+        if want and len(got) < 0.5 * len(want):
+            health["problems"].append(f"linkedin details: only {len(got)}/{len(want)} descriptions fetched")
+
     # ---- learn new company feeds from job-board apply links (relevant titles only)
     new_feeds = []
     for j in all_jobs:
@@ -209,10 +292,11 @@ def main():
         prof = cfg["profiles"].get(j.get("_profile_hint"))
         if not prof or not any(re.search(p, j["title"], re.I) for p in prof["title_include"]):
             continue
-        f = feed_from_url(j.get("url"))
+        src_url = j.get("apply_url") or j.get("url")
+        f = feed_from_url(src_url)
         if not f or feed_key(f) in known_feeds or j["company"] in names:
             continue
-        entry = {"name": j["company"], **f, "added": today.isoformat(), "from_job": j["url"]}
+        entry = {"name": j["company"], **f, "added": today.isoformat(), "from_job": src_url}
         new_feeds.append(entry)
         known_feeds.add(feed_key(f))
         names.append(j["company"])
@@ -220,54 +304,7 @@ def main():
         disc_path.write_text(yaml.safe_dump(discovered + new_feeds, sort_keys=False, allow_unicode=True))
     health["new_feeds_discovered"] = [f"{f['name']} ({f['ats']})" for f in new_feeds]
 
-    known = {norm(n) for n in names}
-    summary = {}
-    for prof_name, prof in cfg["profiles"].items():
-        seen_before = recent_seen(prof_name, today)
-        existing = []
-        pf = outdir / f"{prof_name}.json"
-        if a.retry_failed and pf.exists():
-            existing = json.loads(pf.read_text())
-        kept, reasons, keys = list(existing), {}, {j["key"] for j in existing}
-        # career-site rows first so they win the dedupe over job-board copies
-        for j in sorted(all_jobs, key=lambda x: x["source"].startswith("jobspy")):
-            if j.get("_profile_hint") not in (None, prof_name):
-                continue
-            j = dict(j)
-            ok, why = matches(j, prof, since)
-            if not ok:
-                reasons[why] = reasons.get(why, 0) + 1
-                continue
-            key = job_key(j)
-            if key in keys:
-                reasons["duplicate"] = reasons.get("duplicate", 0) + 1
-                continue
-            keys.add(key)
-            if key in seen_before:
-                reasons["reported-on-earlier-day"] = reasons.get("reported-on-earlier-day", 0) + 1
-                continue
-            if j["source"] == "smartrecruiters" and not j.get("description"):
-                try:
-                    smartrecruiters_detail(j)
-                except Exception as e:
-                    j["description_error"] = f"{type(e).__name__}"
-            j.pop("_detail", None)
-            j.pop("_profile_hint", None)
-            j["key"] = key
-            j["new_company"] = j["source"].startswith("jobspy") and norm(j["company"]) not in known
-            if not j.get("description"):
-                j["description_missing"] = True
-            kept.append(j)
-        kept.sort(key=lambda x: str(x.get("posted_at") or ""), reverse=True)
-        pf.write_text(json.dumps(kept, indent=1, ensure_ascii=False))
-        with open(outdir / f"{prof_name}.csv", "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(f, fieldnames=CSV_COLS, extrasaction="ignore")
-            w.writeheader()
-            w.writerows(kept)
-        summary[prof_name] = {"kept": len(kept), "added_now": len(kept) - len(existing),
-                              "dropped": reasons,
-                              "no_description": sum(1 for j in kept if j.get("description_missing")),
-                              "new_companies": sorted({j["company"] for j in kept if j.get("new_company")})}
+    summary = write_profiles(cfg, all_jobs, names, outdir, today, since, a.retry_failed)
 
     if prev_health:  # merge retry results into today's health
         for n, h in health["companies"].items():
