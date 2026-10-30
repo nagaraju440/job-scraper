@@ -1,0 +1,25 @@
+- name: Miratech
+  ats: smartrecruiters
+  token: Miratech1
+  added: '2026-10-30'
+  from_job: https://jobs.smartrecruiters.com/Miratech1/744000158325801
+- name: Altera Corporation
+  ats: workday
+  url: https://altera.wd1.myworkdayjobs.com/Altera
+  added: '2026-10-30'
+  from_job: https://altera.wd1.myworkdayjobs.com/en-US/Altera/job/Bengaluru-Karnataka-India/FPGA-IP-Software-Development-Engineer_R03358?locations=7a5690ab19831000af4bec9f639a0000&locations=7a5690ab19831000af4c51ba7c190000
+- name: Quantiphi Analytics Solutions
+  ats: workday
+  url: https://quantiphi.wd1.myworkdayjobs.com/Careers_at_Quantiphi
+  added: '2026-10-30'
+  from_job: https://quantiphi.wd1.myworkdayjobs.com/en-US/Careers_at_Quantiphi/job/IN-MH-Mumbai-Eureka/Senior-Software-Developer_JR12332
+- name: Dentsu Webchutney
+  ats: workday
+  url: https://dentsuaegis.wd3.myworkdayjobs.com/DAN_GLOBAL
+  added: '2026-10-30'
+  from_job: https://dentsuaegis.wd3.myworkdayjobs.com/en-US/DAN_GLOBAL/job/DGS-India---Mumbai---Thane-Ashar-IT-Park/Engineering-Manager---Full-stack_R1135306
+- name: Tsys Global Solutions
+  ats: workday
+  url: https://tsys.wd1.myworkdayjobs.com/TSYS
+  added: '2026-10-30'
+  from_job: https://tsys.wd1.myworkdayjobs.com/en-US/TSYS/job/PUNE--INDIA/QA-Automation-Engineer---Java--Selenium--BDD--Cucumber---7-10-Years---Pune_R0076716
