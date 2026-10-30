@@ -1,0 +1,88 @@
+# Daily job scraper config.
+# window_hours: how far back to keep jobs (the workflow can override with --hours).
+window_hours: 24
+
+profiles:
+  # Nagaraju: loose title filter only. Stack, experience (1-5 yrs), 500+ size,
+  # product-company and pay checks are done by the Claude scheduled task.
+  nagaraju:
+    title_include:
+      - 'software (engineer|developer|development engineer)'
+      - '\bSDE\b|\bSWE\b|member of technical staff|\bMTS\b'
+      - 'full[ -]?stack|back[ -]?end|front[ -]?end|node|typescript|react|next\.?js|web (engineer|developer)'
+      - 'tech(nical)? lead|lead (software|engineer)|engineering lead'
+    title_exclude:
+      - '\bjava\b|\.net|\bc#|golang|\bgo\b developer|ruby|php|salesforce|\bsap\b|servicenow developer'
+      - '\bQA\b|test|SDET|quality'
+      - 'data (engineer|scien)|machine learning|\bML\b|android|\bios\b|mobile|embedded|firmware'
+      - 'intern|trainee|graduate|fresher|principal|director|\bvp\b|head of|architect|manager'
+      - 'support engineer|devops|\bSRE\b|site reliability|security engineer|network'
+    location_regex: 'india|bengaluru|bangalore|hyderabad|pune|chennai|mumbai|gurgaon|gurugram|noida|delhi|remote|anywhere'
+    board_terms:
+      - 'senior software engineer node.js typescript'
+      - 'full stack engineer react node'
+      - 'backend engineer nestjs'
+      - 'SDE 2 full stack'
+      - 'tech lead node.js react'
+
+  # Jhansi: QA automation roles.
+  jhansi:
+    title_include:
+      - '\bQA\b|quality (assurance|engineer)|\bSDET\b|test(ing)? (automation|engineer)|automation (test|engineer)|software (development )?engineer in test'
+    title_exclude:
+      - 'manager|director|principal|\blead\b|architect|intern|trainee'
+      - 'manual tester only|hardware|validation engineer'
+    location_regex: 'india|bengaluru|bangalore|hyderabad|pune|chennai|mumbai|gurgaon|gurugram|noida|delhi|remote|anywhere'
+    board_terms:
+      - 'QA automation engineer selenium java'
+      - 'SDET'
+      - 'automation test engineer cypress playwright'
+
+# LinkedIn / Naukri / Google Jobs via JobSpy, for companies not listed below.
+boards:
+  enabled: true
+  sites: [linkedin, naukri, google]
+  location: 'Bengaluru, Karnataka, India'
+  results_per_term: 40
+
+# Company career sites. ats: greenhouse | lever | ashby | smartrecruiters | workday
+# token = the company's board name on that ATS; workday uses the careers-site url.
+# STARTER LIST - every entry is checked on the first GitHub run (--validate) and
+# fixed or replaced; it then grows from the companies in past trackers.
+companies:
+  # --- Workday
+  - {name: NVIDIA,      ats: workday, url: 'https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite', search: ['software engineer India']}
+  - {name: Salesforce,  ats: workday, url: 'https://salesforce.wd12.myworkdayjobs.com/External_Career_Site', search: ['software engineer India']}
+  - {name: Adobe,       ats: workday, url: 'https://adobe.wd5.myworkdayjobs.com/external_experienced', search: ['software engineer India']}
+  - {name: Walmart Global Tech, ats: workday, url: 'https://walmart.wd5.myworkdayjobs.com/WalmartExternal', search: ['software engineer India']}
+  - {name: PayPal,      ats: workday, url: 'https://paypal.wd1.myworkdayjobs.com/jobs', search: ['software engineer India']}
+  - {name: Mastercard,  ats: workday, url: 'https://mastercard.wd1.myworkdayjobs.com/CorporateCareers', search: ['software engineer India']}
+  - {name: Target,      ats: workday, url: 'https://target.wd5.myworkdayjobs.com/targetcareers', search: ['engineer India']}
+  - {name: Autodesk,    ats: workday, url: 'https://autodesk.wd1.myworkdayjobs.com/Ext', search: ['software engineer India']}
+  - {name: Workday,     ats: workday, url: 'https://workday.wd5.myworkdayjobs.com/Workday', search: ['software engineer India']}
+  # --- Greenhouse
+  - {name: Stripe,      ats: greenhouse, token: stripe}
+  - {name: Databricks,  ats: greenhouse, token: databricks}
+  - {name: Twilio,      ats: greenhouse, token: twilio}
+  - {name: Coinbase,    ats: greenhouse, token: coinbase}
+  - {name: Okta,        ats: greenhouse, token: okta}
+  - {name: Postman,     ats: greenhouse, token: postman}
+  - {name: PhonePe,     ats: greenhouse, token: phonepe}
+  - {name: Groww,       ats: greenhouse, token: groww}
+  - {name: Rubrik,      ats: greenhouse, token: rubrik}
+  - {name: Cloudflare,  ats: greenhouse, token: cloudflare}
+  - {name: GitLab,      ats: greenhouse, token: gitlab}
+  - {name: MongoDB,     ats: greenhouse, token: mongodb}
+  - {name: Elastic,     ats: greenhouse, token: elastic}
+  # --- Lever
+  - {name: Meesho,      ats: lever, token: meesho}
+  - {name: CRED,        ats: lever, token: cred}
+  - {name: Zeta,        ats: lever, token: zeta}
+  - {name: Razorpay,    ats: lever, token: razorpay}
+  # --- Ashby
+  - {name: Notion,      ats: ashby, token: notion}
+  - {name: Ramp,        ats: ashby, token: ramp}
+  # --- SmartRecruiters
+  - {name: Visa,        ats: smartrecruiters, token: Visa}
+  - {name: ServiceNow,  ats: smartrecruiters, token: ServiceNow}
+  - {name: Freshworks,  ats: smartrecruiters, token: Freshworks}
