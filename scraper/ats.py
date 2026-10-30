@@ -219,7 +219,19 @@ def _workday_country_filter(facets, country="India"):
         hit = [v["id"] for v in vals if word.search(v.get("descriptor") or "") and v.get("id")]
         if hit and param:
             return {param: hit}
+    if c == "india":  # 3) sites that list only city / office names (GE HealthCare, Barclays)
+        for param, vals in groups:
+            hit = [v["id"] for v in vals if _INDIA_CITY.search(v.get("descriptor") or "") and v.get("id")]
+            if hit and param:
+                return {param: hit}
     return {}
+
+
+_INDIA_CITY = re.compile(
+    r"\b(bengaluru|bangalore|hyderabad|pune|chennai|mumbai|navi mumbai|thane|gurgaon|gurugram|noida|"
+    r"new delhi|delhi|ahmedabad|kolkata|kochi|cochin|coimbatore|trivandrum|thiruvananthapuram|jaipur|"
+    r"indore|chandigarh|mohali|mysore|mysuru|vadodara|nagpur|visakhapatnam|vizag|bhubaneswar|"
+    r"hosur|manesar|greater noida|IND)\b", re.I)
 
 
 def workday(company: str, url: str, country: str = "India", max_age_days: int = 2,
