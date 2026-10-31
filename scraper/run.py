@@ -191,6 +191,8 @@ def main():
     ap.add_argument("--validate", action="store_true")
     ap.add_argument("--retry-failed", action="store_true")
     ap.add_argument("--no-boards", action="store_true", help="skip LinkedIn/Naukri/Google")
+    ap.add_argument("--skip-if-done", action="store_true",
+                    help="scheduled backup runs: exit if today's full run already finished")
     a = ap.parse_args()
 
     cfg = yaml.safe_load((ROOT / "config.yaml").read_text())
@@ -199,6 +201,11 @@ def main():
     since = now - timedelta(hours=hours)
     today = now.astimezone(IST).date()
     outdir = ROOT / "data" / today.isoformat()
+    if a.skip_if_done and (outdir / "health.json").exists():
+        h = json.loads((outdir / "health.json").read_text())
+        if "summary" in h and "phase" not in h and h.get("run_at_ist", "")[11:13] >= "04":
+            print(f"today's run already finished at {h['run_at_ist']} - nothing to do")
+            return 0
     outdir.mkdir(parents=True, exist_ok=True)
     companies = list(cfg["companies"])
     names = [c["name"] for c in companies]

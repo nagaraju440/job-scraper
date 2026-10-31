@@ -2,7 +2,12 @@ name: daily-job-scrape
 
 on:
   schedule:
-    - cron: '17 0 * * *'   # 05:47 IST - main run
+    # GitHub often delays or drops scheduled runs, so the main run has four start
+    # times; the first one that fires does the work and the later ones skip.
+    - cron: '17 23 * * *'  # 04:47 IST
+    - cron: '17 0 * * *'   # 05:47 IST
+    - cron: '17 1 * * *'   # 06:47 IST
+    - cron: '7 2 * * *'    # 07:37 IST
     - cron: '47 2 * * *'   # 08:17 IST - retry only the feeds that were down/failed
   workflow_dispatch:
     inputs:
@@ -15,6 +20,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: daily-job-scrape
+  cancel-in-progress: false
 
 jobs:
   scrape:
@@ -29,7 +38,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Scrape
         env:
-          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || 'run') }}
+          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || 'sched') }}
           HOURS: ${{ github.event.inputs.hours || '24' }}
         run: |
           case "$MODE" in
@@ -37,6 +46,7 @@ jobs:
             retry)    python -m scraper.run --retry-failed ;;
             find)     python -m scraper.find_feeds companies_to_find.txt ;;
             debug)    python -m scraper.debug_li 4419257119 4484828400 4483421985 4443943271 4485297942 ;;
+            sched)    python -m scraper.run --hours 24 --skip-if-done ;;
             *)        python -m scraper.run --hours "$HOURS" ;;
           esac
       - name: Save results to the repo
@@ -53,4 +63,4 @@ jobs:
           done
           exit 1
         env:
-          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || 'run') }}
+          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || 'sched') }}
