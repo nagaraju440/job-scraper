@@ -31,7 +31,7 @@ from .boards import jobspy_search, linkedin_details
 ROOT = Path(__file__).resolve().parent.parent
 IST = timezone(timedelta(hours=5, minutes=30))
 CSV_COLS = ["company", "title", "location", "posted_at", "freshness", "source",
-            "job_id", "url", "apply_url", "new_company"]
+            "job_id", "url", "apply_url", "new_company", "seen_before"]
 
 
 def norm(s):
@@ -94,12 +94,14 @@ def job_key(j):
 
 
 def recent_seen(profile, today, days=3):
-    seen = set()
-    for i in range(1, days + 1):
-        f = ROOT / "data" / (today - timedelta(days=i)).isoformat() / f"{profile}.json"
+    """{job key: earliest earlier date it appeared in a scraper file}"""
+    seen = {}
+    for i in range(days, 0, -1):
+        d = (today - timedelta(days=i)).isoformat()
+        f = ROOT / "data" / d / f"{profile}.json"
         if f.exists():
             for j in json.loads(f.read_text()):
-                seen.add(j["key"])
+                seen.setdefault(j["key"], d)
     return seen
 
 
@@ -155,8 +157,10 @@ def write_profiles(cfg, all_jobs, names, outdir, today, since, retry):
                 continue
             keys.add(key)
             if key in seen_before:
-                reasons["reported-on-earlier-day"] = reasons.get("reported-on-earlier-day", 0) + 1
-                continue
+                # tag, never drop: the daily task de-duplicates against its own trackers,
+                # and a scraper file it never read (late or test run) must not hide jobs
+                j["seen_before"] = seen_before[key]
+                reasons["seen-on-earlier-day (kept, tagged)"] = reasons.get("seen-on-earlier-day (kept, tagged)", 0) + 1
             if j["source"] == "smartrecruiters" and not j.get("description"):
                 try:
                     smartrecruiters_detail(j)

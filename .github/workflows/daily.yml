@@ -46,7 +46,7 @@ jobs:
             retry)    python -m scraper.run --retry-failed ;;
             find)     python -m scraper.find_feeds companies_to_find.txt ;;
             debug)    python -m scraper.debug_li 4419257119 4484828400 4483421985 4443943271 4485297942 ;;
-            sched)    python -m scraper.run --hours 24 --skip-if-done ;;
+            sched)    python -m scraper.run --hours 36 --skip-if-done ;;
             *)        python -m scraper.run --hours "$HOURS" ;;
           esac
       - name: Save results to the repo
