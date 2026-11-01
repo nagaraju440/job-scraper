@@ -28,3 +28,13 @@
   url: https://candescent.wd501.myworkdayjobs.com/Hiring
   added: '2026-10-31'
   from_job: https://candescent.wd501.myworkdayjobs.com/en-US/Hiring/job/IN---Hyderabad---Office/Software-Engineer-II_R0002265?locations=4ac7a9cd71cd1000e326f29f1dea0000&locations=4ac7a9cd71cd1000aa024699067f0000&locations=4ac7a9cd71cd1000aa023c5f8bb60000
+- name: Betsol
+  ats: smartrecruiters
+  token: Betsol
+  added: '2026-11-01'
+  from_job: https://jobs.smartrecruiters.com/Betsol/744000158681257
+- name: DHR Holding India
+  ats: workday
+  url: https://danaher.wd1.myworkdayjobs.com/DanaherJobs
+  added: '2026-11-01'
+  from_job: https://danaher.wd1.myworkdayjobs.com/en-US/DanaherJobs/job/Bangalore-Karnataka-India/Automation-Test-Engineer_R1319309
