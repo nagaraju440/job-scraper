@@ -4,6 +4,9 @@
   python -m scraper.run --hours 72       # wider window (catch-up after a missed day)
   python -m scraper.run --retry-failed   # re-fetch only the feeds that failed/were down
                                          # earlier today and merge them into today's files
+  python -m scraper.run --evening        # evening run: only jobs posted TODAY (IST, since 00:00)
+                                         # -> <profile>_evening.json/.csv + health_evening.json;
+                                         # the morning files are never touched
 
 Writes data/<YYYY-MM-DD IST>/<profile>.json + .csv and health.json.
 Only a LOOSE pre-filter happens here (title family, India/remote, freshness).
@@ -63,7 +66,19 @@ def fetch_company(c, max_age_days):
     return jobs, meta, round(time.time() - t0, 1)
 
 
-def matches(job, prof, since):
+def posted_ist_date(raw):
+    """IST calendar date a posting belongs to. Date-only values (T00:00:00) keep their
+    literal date so a foreign offset cannot shift them to the neighbouring day."""
+    if is_date_only(raw):
+        try:
+            return datetime.strptime(str(raw)[:10], "%Y-%m-%d").date()
+        except ValueError:
+            return None
+    dt = parse_dt(raw)
+    return dt.astimezone(IST).date() if dt else None
+
+
+def matches(job, prof, since, only_day=None):
     title = job.get("title") or ""
     if not any(re.search(p, title, re.I) for p in prof["title_include"]):
         return False, "title"
@@ -74,6 +89,12 @@ def matches(job, prof, since):
         return False, "location"
     raw = job.get("posted_at")
     dt = parse_dt(raw)
+    if only_day is not None:
+        # evening mode: keep only postings dated on this IST day (unknown dates dropped)
+        if posted_ist_date(raw) != only_day:
+            return False, "not-posted-today" if dt else "posted-date-unknown"
+        job["freshness"] = "fresh"
+        return True, ""
     if dt is None:
         job["freshness"] = "posted date unknown - verify"
     elif is_date_only(raw):
@@ -131,14 +152,16 @@ def fetch_all(companies, hours, health):
 
 
 
-def write_profiles(cfg, all_jobs, names, outdir, today, since, retry):
-    """Loose per-profile filter, de-duplication and the json/csv outputs. Returns the summary."""
+def write_profiles(cfg, all_jobs, names, outdir, today, since, retry, evening=False):
+    """Loose per-profile filter, de-duplication and the json/csv outputs. Returns the summary.
+    evening=True: keep only jobs posted on `today` (IST) and write <profile>_evening.*"""
+    sfx = "_evening" if evening else ""
     known = {norm(n) for n in names}
     summary = {}
     for prof_name, prof in cfg["profiles"].items():
         seen_before = recent_seen(prof_name, today)
         existing = []
-        pf = outdir / f"{prof_name}.json"
+        pf = outdir / f"{prof_name}{sfx}.json"
         if retry and pf.exists():
             existing = json.loads(pf.read_text())
         kept, reasons, keys = list(existing), {}, {j["key"] for j in existing}
@@ -147,7 +170,7 @@ def write_profiles(cfg, all_jobs, names, outdir, today, since, retry):
             if j.get("_profile_hint") not in (None, prof_name):
                 continue
             orig, j = j, dict(j)
-            ok, why = matches(j, prof, since)
+            ok, why = matches(j, prof, since, today if evening else None)
             if not ok:
                 reasons[why] = reasons.get(why, 0) + 1
                 continue
@@ -177,7 +200,7 @@ def write_profiles(cfg, all_jobs, names, outdir, today, since, retry):
             kept.append(j)
         kept.sort(key=lambda x: str(x.get("posted_at") or ""), reverse=True)
         pf.write_text(json.dumps(kept, indent=1, ensure_ascii=False))
-        with open(outdir / f"{prof_name}.csv", "w", newline="", encoding="utf-8") as f:
+        with open(outdir / f"{prof_name}{sfx}.csv", "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=CSV_COLS, extrasaction="ignore")
             w.writeheader()
             w.writerows(kept)
@@ -197,7 +220,11 @@ def main():
     ap.add_argument("--no-boards", action="store_true", help="skip LinkedIn/Naukri/Google")
     ap.add_argument("--skip-if-done", action="store_true",
                     help="scheduled backup runs: exit if today's full run already finished")
+    ap.add_argument("--evening", action="store_true",
+                    help="only jobs posted today (IST); writes *_evening.json + health_evening.json")
     a = ap.parse_args()
+    if a.evening and (a.retry_failed or a.validate):
+        raise SystemExit("--evening cannot be combined with --retry-failed/--validate")
 
     cfg = yaml.safe_load((ROOT / "config.yaml").read_text())
     hours = a.hours or cfg.get("window_hours", 24)
@@ -205,7 +232,18 @@ def main():
     since = now - timedelta(hours=hours)
     today = now.astimezone(IST).date()
     outdir = ROOT / "data" / today.isoformat()
-    if a.skip_if_done and (outdir / "health.json").exists():
+    health_name = "health_evening.json" if a.evening else "health.json"
+    if a.evening and a.skip_if_done:
+        if now.astimezone(IST).hour < 12:
+            print("evening backup fired after IST midnight - too late for today's nightly task, skipping")
+            return 0
+        he = outdir / health_name
+        if he.exists():
+            h = json.loads(he.read_text())
+            if "summary" in h and "phase" not in h:
+                print(f"today's evening run already finished at {h['run_at_ist']} - nothing to do")
+                return 0
+    elif a.skip_if_done and (outdir / "health.json").exists():
         h = json.loads((outdir / "health.json").read_text())
         if "summary" in h and "phase" not in h and h.get("run_at_ist", "")[11:13] >= "04":
             print(f"today's run already finished at {h['run_at_ist']} - nothing to do")
@@ -240,6 +278,7 @@ def main():
             return 0
 
     health = {"run_at_ist": now.astimezone(IST).isoformat(timespec="minutes"),
+              **({"mode": "evening", "posted_on_ist": today.isoformat()} if a.evening else {}),
               "window_hours": hours, "companies": {}, "boards": {}, "problems": []}
 
     all_jobs = fetch_all(companies, hours, health)
@@ -254,14 +293,17 @@ def main():
 
     # checkpoint: career-site results are saved now, so a later crash/timeout never loses them
     if not a.retry_failed:
-        partial = write_profiles(cfg, all_jobs, names, outdir, today, since, False)
-        (outdir / "health.json").write_text(json.dumps(
+        partial = write_profiles(cfg, all_jobs, names, outdir, today, since, False, a.evening)
+        (outdir / health_name).write_text(json.dumps(
             {**health, "phase": "career sites done - job boards still running", "summary": partial}, indent=1))
 
     # ---- job boards (discovery) - not repeated on a retry run
     if not a.retry_failed and not a.no_boards and cfg.get("boards", {}).get("enabled", True):
         b = cfg["boards"]
-        deadline = time.time() + 60 * b.get("max_minutes", 40)
+        # evening run must finish before the 23:30 IST nightly task: smaller time budget
+        board_min = b.get("evening_max_minutes", 15) if a.evening else b.get("max_minutes", 40)
+        detail_min = b.get("evening_details_minutes", 8) if a.evening else b.get("details_minutes", 20)
+        deadline = time.time() + 60 * board_min
         for prof_name, prof in cfg["profiles"].items():
             jobs, errs = jobspy_search(b["sites"], prof["board_terms"], b["location"],
                                        hours, b["results_per_term"], deadline=deadline)
@@ -281,9 +323,9 @@ def main():
         for j in all_jobs:
             if j["source"] == "jobspy-linkedin" and not j.get("description"):
                 prof = cfg["profiles"].get(j.get("_profile_hint"))
-                if prof and matches(dict(j), prof, since)[0]:
+                if prof and matches(dict(j), prof, since, today if a.evening else None)[0]:
                     want.setdefault(j["job_id"], []).append(j)
-        got, errs = linkedin_details(list(want), deadline=deadline + 60 * b.get("details_minutes", 20))
+        got, errs = linkedin_details(list(want), deadline=deadline + 60 * detail_min)
         for jid, (desc, apply_url) in got.items():
             for j in want[jid]:
                 j["description"] = desc
@@ -315,7 +357,7 @@ def main():
         disc_path.write_text(yaml.safe_dump(discovered + new_feeds, sort_keys=False, allow_unicode=True))
     health["new_feeds_discovered"] = [f"{f['name']} ({f['ats']})" for f in new_feeds]
 
-    summary = write_profiles(cfg, all_jobs, names, outdir, today, since, a.retry_failed)
+    summary = write_profiles(cfg, all_jobs, names, outdir, today, since, a.retry_failed, a.evening)
 
     if prev_health:  # merge retry results into today's health
         for n, h in health["companies"].items():
@@ -327,7 +369,7 @@ def main():
         health = prev_health
     else:
         health["summary"] = summary
-    (outdir / "health.json").write_text(json.dumps(health, indent=1, ensure_ascii=False))
+    (outdir / health_name).write_text(json.dumps(health, indent=1, ensure_ascii=False))
     print(json.dumps(summary, indent=1))
     feeds = health["companies"]
     ok_feeds = sum(1 for h in feeds.values() if not h.get("error") and not h.get("down"))

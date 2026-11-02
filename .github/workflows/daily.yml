@@ -9,13 +9,17 @@ on:
     - cron: '17 1 * * *'   # 06:47 IST
     - cron: '7 2 * * *'    # 07:37 IST
     - cron: '47 2 * * *'   # 08:17 IST - retry only the feeds that were down/failed
+    # Evening run: jobs posted today (IST) for the 23:30 IST nightly task. Writes separate
+    # *_evening.json files; the second time is a backup that skips if the first finished.
+    - cron: '15 17 * * *'  # 22:45 IST
+    - cron: '35 17 * * *'  # 23:05 IST - backup
   workflow_dispatch:
     inputs:
       hours:
         description: 'Window in hours (24 normal, 48/72 to catch up)'
         default: '24'
       mode:
-        description: 'run, retry, validate, find or debug'
+        description: 'run, retry, evening, validate, find or debug'
         default: 'run'
 
 permissions:
@@ -38,8 +42,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Scrape
         env:
-          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || 'sched') }}
+          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || ((github.event.schedule == '15 17 * * *' || github.event.schedule == '35 17 * * *') && 'evening' || 'sched')) }}
           HOURS: ${{ github.event.inputs.hours || '24' }}
+          EVENT: ${{ github.event_name }}
         run: |
           case "$MODE" in
             validate) python -m scraper.run --validate ;;
@@ -47,6 +52,9 @@ jobs:
             find)     python -m scraper.find_feeds companies_to_find.txt ;;
             debug)    python -m scraper.debug_li 4419257119 4484828400 4483421985 4443943271 4485297942 ;;
             sched)    python -m scraper.run --hours 36 --skip-if-done ;;
+            evening)  # scheduled runs skip if today's evening files exist; manual runs always scrape
+                      if [ "$EVENT" = "schedule" ]; then python -m scraper.run --evening --hours 24 --skip-if-done
+                      else python -m scraper.run --evening --hours 24; fi ;;
             *)        python -m scraper.run --hours "$HOURS" ;;
           esac
       - name: Save results to the repo
@@ -63,4 +71,4 @@ jobs:
           done
           exit 1
         env:
-          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || 'sched') }}
+          MODE: ${{ github.event.inputs.mode || (github.event.schedule == '47 2 * * *' && 'retry' || ((github.event.schedule == '15 17 * * *' || github.event.schedule == '35 17 * * *') && 'evening' || 'sched')) }}
