@@ -38,3 +38,14 @@
   url: https://danaher.wd1.myworkdayjobs.com/DanaherJobs
   added: '2026-11-01'
   from_job: https://danaher.wd1.myworkdayjobs.com/en-US/DanaherJobs/job/Bangalore-Karnataka-India/Automation-Test-Engineer_R1319309
+- name: Cisco
+  ats: workday
+  url: https://cisco.wd5.myworkdayjobs.com/Cisco_Careers
+  added: '2026-11-02'
+  from_job: https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Development-Engineer---Routing-Platforms-4-to-8-Years-_2026493-1?locations=8676de3331b41001f4eaac80a6280000&locations=6bed8334bf4b1001f4f15a1f787a0000&locations=8676de3331b41001f4f96625fdde0000&locations=ef8a5a22403d1001f4fde228ba110000&locations=026fa05becb01001f506953e0df00000&locations=3dbd26f9e73e1001f4d59df763f20000&locations=662e524adea41001f4d0bd5a1ddd0000&locations=0696c83bbe641001f4f0800dae0d0000
+- name: AMERICAN EXPRESS
+  ats: oracle
+  url: https://egug.fa.us2.oraclecloud.com
+  site: CX
+  added: '2026-11-02'
+  from_job: https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/26015220
