@@ -49,3 +49,18 @@
   site: CX
   added: '2026-11-02'
   from_job: https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/26015220
+- name: Kyndryl
+  ats: workday
+  url: https://kyndryl.wd5.myworkdayjobs.com/kyndrylprofessionalcareers
+  added: '2026-11-04'
+  from_job: https://kyndryl.wd5.myworkdayjobs.com/en-US/kyndrylprofessionalcareers/job/Bangalore-Karnataka-India/Full-Stack-Modernization-Engineer--Java--Spring-Boot---React-_R-71281?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e
+- name: Trek Bikes
+  ats: workday
+  url: https://trekbikes.wd1.myworkdayjobs.com/TREK
+  added: '2026-11-04'
+  from_job: https://trekbikes.wd1.myworkdayjobs.com/en-US/TREK/job/Haryana-India/Software-Engineer-II_Trek115922
+- name: Pattern Technologies
+  ats: lever
+  token: pattern
+  added: '2026-11-04'
+  from_job: https://jobs.lever.co/pattern/323c0107-c3df-465c-829d-c24c9b0c7524
