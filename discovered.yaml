@@ -64,3 +64,13 @@
   token: pattern
   added: '2026-11-04'
   from_job: https://jobs.lever.co/pattern/323c0107-c3df-465c-829d-c24c9b0c7524
+- name: Thomson Reuters
+  ats: workday
+  url: https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site
+  added: '2026-11-05'
+  from_job: https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/India-Bengaluru-Karnataka/Software-Engineer-II_JREQ203939
+- name: Trackmind
+  ats: lever
+  token: trackmind
+  added: '2026-11-05'
+  from_job: https://jobs.lever.co/trackmind/ec14b2d1-13e6-4fc4-8f20-45e84b572fe5
