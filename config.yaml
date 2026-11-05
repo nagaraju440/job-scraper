@@ -52,8 +52,8 @@ boards:
   results_per_term: 75
   max_minutes: 40       # time budget for the LinkedIn/Naukri searches
   details_minutes: 20   # extra budget for LinkedIn descriptions of jobs that pass the filter
-  evening_max_minutes: 15     # --evening run (22:45 IST) must finish before the 23:30 IST nightly task
-  evening_details_minutes: 8
+  evening_max_minutes: 35     # --evening run (22:45 IST) must finish before the 23:30 IST nightly task
+  evening_details_minutes: 15
 
 # Company career sites. ats: greenhouse | lever | ashby | smartrecruiters (token = board name)
 # | workday (url = careers site) | oracle (url + site) | eightfold (url + domain) | amazon.
