@@ -79,3 +79,13 @@
   url: https://volarisgroup.wd3.myworkdayjobs.com/Incadea
   added: '2026-11-05'
   from_job: https://volarisgroup.wd3.myworkdayjobs.com/en-US/Incadea/job/India---Bangalore/Senior-Software-Developer_R38303
+- name: Sumo Logic
+  ats: greenhouse
+  token: sumologic
+  added: '2026-11-05'
+  from_job: https://job-boards.greenhouse.io/sumologic/jobs/8352378
+- name: Iqvia Biotech
+  ats: workday
+  url: https://iqvia.wd1.myworkdayjobs.com/IQVIA
+  added: '2026-11-05'
+  from_job: https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Kochi-India/QA-Automation-Engineer_R1571699?Location_Country=c4f78be1a8f14da0ab49ce1162348a5e
