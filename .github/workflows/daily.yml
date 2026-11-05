@@ -1,18 +1,6 @@
 name: daily-job-scrape
 
 on:
-  schedule:
-    # GitHub often delays or drops scheduled runs, so the main run has four start
-    # times; the first one that fires does the work and the later ones skip.
-    - cron: '17 23 * * *'  # 04:47 IST
-    - cron: '17 0 * * *'   # 05:47 IST
-    - cron: '17 1 * * *'   # 06:47 IST
-    - cron: '7 2 * * *'    # 07:37 IST
-    - cron: '47 2 * * *'   # 08:17 IST - retry only the feeds that were down/failed
-    # Evening run: jobs posted today (IST) for the 23:30 IST nightly task. Writes separate
-    # *_evening.json files; the second time is a backup that skips if the first finished.
-    - cron: '15 17 * * *'  # 22:45 IST
-    - cron: '35 17 * * *'  # 23:05 IST - backup
   workflow_dispatch:
     inputs:
       hours:
