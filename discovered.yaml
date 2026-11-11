@@ -89,3 +89,28 @@
   url: https://iqvia.wd1.myworkdayjobs.com/IQVIA
   added: '2026-11-05'
   from_job: https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Kochi-India/QA-Automation-Engineer_R1571699?Location_Country=c4f78be1a8f14da0ab49ce1162348a5e
+- name: Vanguard
+  ats: workday
+  url: https://vanguard.wd5.myworkdayjobs.com/vanguard_external
+  added: '2026-11-11'
+  from_job: https://vanguard.wd5.myworkdayjobs.com/en-US/vanguard_external/job/Hyderabad-India/Engineering-Manager---Java-Full-Stack---Cloud_182564
+- name: ABC Fitness Solutions
+  ats: workday
+  url: https://abcfinancial.wd5.myworkdayjobs.com/ABCFinancialServices
+  added: '2026-11-11'
+  from_job: https://abcfinancial.wd5.myworkdayjobs.com/en-US/ABCFinancialServices/job/Hyderabad-Office-India/Senior-Software-Developer_REQ-1646
+- name: HP
+  ats: workday
+  url: https://hp.wd5.myworkdayjobs.com/ExternalCareerSite
+  added: '2026-11-11'
+  from_job: https://hp.wd5.myworkdayjobs.com/en-US/ExternalCareerSite/job/Bengaluru-Karnataka-India/Software-Development-Engineer--Frontend_3170250-1?Location_Country=c4f78be1a8f14da0ab49ce1162348a5e
+- name: 'Hewlett Packard Enterprise '
+  ats: workday
+  url: https://hpe.wd5.myworkdayjobs.com/Jobsathpe
+  added: '2026-11-11'
+  from_job: https://hpe.wd5.myworkdayjobs.com/en-US/Jobsathpe/job/Bengaluru-Karntaka-India/Software-Engineer-2_1214507-2
+- name: Sopra Steria
+  ats: smartrecruiters
+  token: SopraSteria1
+  added: '2026-11-11'
+  from_job: https://jobs.smartrecruiters.com/SopraSteria1/744000160799592
