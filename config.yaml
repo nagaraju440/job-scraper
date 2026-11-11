@@ -19,12 +19,22 @@ profiles:
       - 'support engineer|devops|\bSRE\b|site reliability|security engineer|network'
     location_regex: 'india|bengaluru|bangalore|hyderabad|pune|chennai|mumbai|gurgaon|gurugram|noida|delhi|remote|anywhere'
     board_terms:
+      - 'software engineer node.js'
       - 'senior software engineer node.js typescript'
-      - 'full stack engineer react node'
       - 'backend engineer node.js'
+      - 'senior backend engineer typescript'
+      - 'backend developer nestjs'
       - 'nestjs developer'
+      - 'node.js developer typescript'
+      - 'backend engineer postgresql'
+      - 'full stack engineer react node'
+      - 'full stack developer node.js react'
+      - 'SDE 2 backend'
       - 'SDE 2 full stack'
+      - 'software engineer II backend'
       - 'software engineer II typescript'
+      - 'software development engineer node.js'
+      - 'member of technical staff full stack'
       - 'frontend engineer react next.js'
       - 'tech lead node.js react'
 
@@ -47,13 +57,13 @@ profiles:
 # GitHub's servers and was never part of the old pipeline, so it is not used.)
 boards:
   enabled: true
-  sites: [linkedin, naukri]
-  location: 'Bengaluru, Karnataka, India'
-  results_per_term: 75
+  sites: [linkedin, naukri, indeed]   # indeed added 2026-11-12 (runs last; skipped if time runs out)
+  location: 'India'          # all of India (was Bengaluru only)
+  results_per_term: 100
   max_minutes: 40       # time budget for the LinkedIn/Naukri searches
   details_minutes: 20   # extra budget for LinkedIn descriptions of jobs that pass the filter
-  evening_max_minutes: 35     # --evening run (22:45 IST) must finish before the 23:30 IST nightly task
-  evening_details_minutes: 15
+  evening_max_minutes: 65     # evening run starts 21:30 IST; ~90 min total, done before the 23:30 IST nightly task
+  evening_details_minutes: 20
 
 # Company career sites. ats: greenhouse | lever | ashby | smartrecruiters (token = board name)
 # | workday (url = careers site) | oracle (url + site) | eightfold (url + domain) | amazon.
