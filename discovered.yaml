@@ -114,3 +114,49 @@
   token: SopraSteria1
   added: '2026-11-11'
   from_job: https://jobs.smartrecruiters.com/SopraSteria1/744000160799592
+- name: Circles
+  ats: workday
+  url: https://circles.wd103.myworkdayjobs.com/Circles
+  added: '2026-11-12'
+  from_job: https://circles.wd103.myworkdayjobs.com/en-US/Circles/job/India/Staff-Software-Engineer---8---Golang--Nodejs-_R-100519
+- name: Experity
+  ats: workday
+  url: https://experity.wd108.myworkdayjobs.com/Experity_Careers
+  added: '2026-11-12'
+  from_job: https://experity.wd108.myworkdayjobs.com/en-US/Experity_Careers/job/Bengaluru-Office/Software-Engineer-II_JR100356
+- name: Bidgely, Inc
+  ats: ashby
+  token: bidgely-inc
+  added: '2026-11-12'
+  from_job: https://jobs.ashbyhq.com/bidgely-inc/1a5e3251-350d-4b3f-b326-df3a2b385af6?utm_source=93KkPkVqAE
+- name: MRI Software
+  ats: workday
+  url: https://mrisoftware.wd501.myworkdayjobs.com/External_CareerSite
+  added: '2026-11-12'
+  from_job: https://mrisoftware.wd501.myworkdayjobs.com/en-US/External_CareerSite/job/DelhiNCR/Software-Engineer--3-4y-of-exp-_R-109734
+- name: Mouser
+  ats: oracle
+  url: https://eabw.fa.us2.oraclecloud.com
+  site: CX_1
+  added: '2026-11-12'
+  from_job: https://eabw.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs/preview/31373
+- name: Nemetschek India
+  ats: smartrecruiters
+  token: NemetschekSE2
+  added: '2026-11-12'
+  from_job: https://jobs.smartrecruiters.com/NemetschekSE2/744000161224088-automation-engineer
+- name: DXC Technology
+  ats: workday
+  url: https://dxctechnology.wd1.myworkdayjobs.com/DXCJobs
+  added: '2026-11-12'
+  from_job: https://dxctechnology.wd1.myworkdayjobs.com/en-US/DXCJobs/job/IND---AP---HYDERABAD/Test-Automation_51591966
+- name: ZEISS Group
+  ats: workday
+  url: https://zeissgroup.wd3.myworkdayjobs.com/External
+  added: '2026-11-12'
+  from_job: https://zeissgroup.wd3.myworkdayjobs.com/en-US/External/job/Bangalore/Test-Automation-Lead_JR_1054776-1
+- name: Protolabs
+  ats: lever
+  token: protolabs
+  added: '2026-11-12'
+  from_job: https://jobs.lever.co/protolabs/ee52a4c7-0ffb-4172-83fe-6485e482aa21?lever-source=Indeed
