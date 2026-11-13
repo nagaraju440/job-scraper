@@ -160,3 +160,44 @@
   token: protolabs
   added: '2026-11-12'
   from_job: https://jobs.lever.co/protolabs/ee52a4c7-0ffb-4172-83fe-6485e482aa21?lever-source=Indeed
+- name: Xoom
+  ats: workday
+  url: https://wd1.myworkdaysite.com/recruiting/paypal/jobs
+  added: '2026-11-13'
+  from_job: https://wd1.myworkdaysite.com/en-US/recruiting/paypal/jobs/job/Bangalore-Karnataka-India/Sr-Software-Engineer--Full-Stack---React---Nodejs---Java-_R0138501-1
+- name: Legato
+  ats: workday
+  url: https://elevancehealth.wd1.myworkdayjobs.com/carelonglobal_in
+  added: '2026-11-13'
+  from_job: https://elevancehealth.wd1.myworkdayjobs.com/en-US/carelonglobal_in/job/IND-KA-Bengaluru-Bagmane-Solarium-City/Teradata---Software-Engineer-II---40418-74962---JR211377_JR211377
+- name: Hitachi Energy
+  ats: workday
+  url: https://hitachi.wd1.myworkdayjobs.com/hitachi
+  added: '2026-11-13'
+  from_job: https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Pune-Maharashtra-India/Full-Stack-Software-Engineer---Product-Security-Platforms_R0150473
+- name: Crowe Capability Center - India
+  ats: workday
+  url: https://crowe.wd12.myworkdayjobs.com/External_Careers
+  added: '2026-11-13'
+  from_job: https://crowe.wd12.myworkdayjobs.com/External_Careers/job/Hyderabad-Telangana-India/Junior-Software-Engineer-1_R-52653
+- name: Oracle
+  ats: oracle
+  url: https://eeho.fa.us2.oraclecloud.com
+  site: CX_1
+  added: '2026-11-13'
+  from_job: https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/350293
+- name: Solera
+  ats: workday
+  url: https://solera.wd5.myworkdayjobs.com/Global_Career_Site
+  added: '2026-11-13'
+  from_job: https://solera.wd5.myworkdayjobs.com/Global_Career_Site/job/Bangalore/Principal-Software-Engineer_JR-019939
+- name: State Street
+  ats: workday
+  url: https://statestreet.wd1.myworkdayjobs.com/Global
+  added: '2026-11-13'
+  from_job: https://statestreet.wd1.myworkdayjobs.com/en-US/Global/job/Bangalore-India/Java-Full-Stack-Developer---Senior-Manager_R-791492
+- name: Cordance
+  ats: greenhouse
+  token: cordance
+  added: '2026-11-13'
+  from_job: https://job-boards.greenhouse.io/cordance/jobs/5480032008
