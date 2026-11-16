@@ -211,3 +211,43 @@
   url: https://pfizer.wd1.myworkdayjobs.com/PfizerCareers
   added: '2026-11-15'
   from_job: https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/India---Mumbai/Sr-Manager--Full-Stack-Engineering_4966936
+- name: Skyhigh Networks
+  ats: workday
+  url: https://trellix.wd1.myworkdayjobs.com/EnterpriseCareers
+  added: '2026-11-16'
+  from_job: https://trellix.wd1.myworkdayjobs.com/en-US/EnterpriseCareers/job/India-Bangalore/Software-Development-Engineer_JR0038027?locations=17473f74f1d501f1ff3fb267a101a6dd&locations=17473f74f1d501886cf7ba67a101abdd
+- name: Enfusion
+  ats: workday
+  url: https://clearwateranalytics.wd1.myworkdayjobs.com/Clearwater_Analytics_Careers
+  added: '2026-11-16'
+  from_job: https://clearwateranalytics.wd1.myworkdayjobs.com/en-US/Clearwater_Analytics_Careers/job/Office---Mumbai/Software-Development-Engineer_R10725
+- name: Alcon
+  ats: workday
+  url: https://alcon.wd5.myworkdayjobs.com/careers_alcon
+  added: '2026-11-16'
+  from_job: https://alcon.wd5.myworkdayjobs.com/en-US/careers_alcon/job/Bangalore-India/Principal-II--Software-Engineering_R-2026-50806-1
+- name: QAD, Inc.
+  ats: smartrecruiters
+  token: QADInc
+  added: '2026-11-16'
+  from_job: https://jobs.smartrecruiters.com/QADInc/744000161775674-sr-principal-software-engineer-net-
+- name: Telstra
+  ats: workday
+  url: https://telstra.wd3.myworkdayjobs.com/Telstra_Careers
+  added: '2026-11-16'
+  from_job: https://telstra.wd3.myworkdayjobs.com/en-US/Telstra_Careers/job/Bengaluru-Karnataka/Software-Engineer-II---Full-Stack---Java--Springboot--React_JR-10176661
+- name: Deutsche Bank
+  ats: workday
+  url: https://db.wd3.myworkdayjobs.com/DBWebsite
+  added: '2026-11-16'
+  from_job: https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Pune---Margarpatta/QA-Engineer-for-F2B-Test-Management--AS_R0458033
+- name: PTC
+  ats: workday
+  url: https://ptc.wd1.myworkdayjobs.com/PTC
+  added: '2026-11-16'
+  from_job: https://ptc.wd1.myworkdayjobs.com/en-US/PTC/job/Pune-India/Senior-QA-Technical-Lead_JR113061-1
+- name: OnIT
+  ats: lever
+  token: onit
+  added: '2026-11-16'
+  from_job: https://jobs.lever.co/onit/d18b5d38-b741-4626-b9d4-a8831cdab7b3
