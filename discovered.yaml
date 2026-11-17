@@ -251,3 +251,69 @@
   token: onit
   added: '2026-11-16'
   from_job: https://jobs.lever.co/onit/d18b5d38-b741-4626-b9d4-a8831cdab7b3
+- name: Wolters Kluwer
+  ats: workday
+  url: https://wk.wd3.myworkdayjobs.com/External
+  added: '2026-11-17'
+  from_job: https://wk.wd3.myworkdayjobs.com/en-US/External/job/IND---Chennai-Neville-Towers/Product-Software-Engineer_R0061465
+- name: Zillow
+  ats: workday
+  url: https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External
+  added: '2026-11-17'
+  from_job: https://zillow.wd5.myworkdayjobs.com/en-US/Zillow_Group_External/job/Bengaluru/Software-Development-Engineer_P750929-1
+- name: Commonwealth Bank of Australia
+  ats: workday
+  url: https://cba.wd3.myworkdayjobs.com/commbank_careers
+  added: '2026-11-17'
+  from_job: https://cba.wd3.myworkdayjobs.com/en-US/commbank_careers/job/Bangalore---Manyata-Tech-Park-Road/Staff-Software-Engineer_REQ268613
+- name: Agilent Technologies India Pvt Ltd.
+  ats: workday
+  url: https://agilent.wd5.myworkdayjobs.com/Agilent_Careers
+  added: '2026-11-17'
+  from_job: https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/India-Hyderabad-Unit-201/Senior-Software-Engineer---AWS_4039044-2
+- name: Sarvam
+  ats: ashby
+  token: sarvam
+  added: '2026-11-17'
+  from_job: https://jobs.ashbyhq.com/sarvam/fa96b55d-0c77-423d-8eef-f579c8496adb?utm_source=DEOx3xoke9
+- name: Eurofins GSC IT DC
+  ats: smartrecruiters
+  token: Eurofins
+  added: '2026-11-17'
+  from_job: https://jobs.smartrecruiters.com/Eurofins/744000162001469-senior-software-engineer
+- name: Resideo
+  ats: oracle
+  url: https://ehtl.fa.us6.oraclecloud.com
+  site: CX
+  added: '2026-11-17'
+  from_job: https://ehtl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/requisitions/preview/19847
+- name: Cloudera
+  ats: workday
+  url: https://cloudera.wd5.myworkdayjobs.com/External_Career
+  added: '2026-11-17'
+  from_job: https://cloudera.wd5.myworkdayjobs.com/en-US/External_Career/job/India-Bangalore/Senior-Staff-Software-Engineer--Octopai---Modeling---APIs-_261536
+- name: General Mills
+  ats: workday
+  url: https://genmills.wd1.myworkdayjobs.com/GMI_External_Careers
+  added: '2026-11-17'
+  from_job: https://genmills.wd1.myworkdayjobs.com/en-US/GMI_External_Careers/job/Powai-Mumbai-MH/Software-Engineer-II---Sites---Services_10131827
+- name: Morningstar
+  ats: workday
+  url: https://morningstar.wd5.myworkdayjobs.com/morningstar
+  added: '2026-11-17'
+  from_job: https://morningstar.wd5.myworkdayjobs.com/morningstar/job/Mumbai/QA-Automation-Engineer_AP-25352468-1
+- name: Genpact
+  ats: workday
+  url: https://genpact.wd108.myworkdayjobs.com/External_Careers
+  added: '2026-11-17'
+  from_job: https://genpact.wd108.myworkdayjobs.com/External_Careers/job/1401-G-India-Floor-1-to-12-Hafeezpet-Phoenix-Hyderabad/Tech-Lead---Testing---Quality-Assurance-N-4C_JR10034453
+- name: Trimble
+  ats: workday
+  url: https://trimble.wd1.myworkdayjobs.com/TrimbleCareers
+  added: '2026-11-17'
+  from_job: https://trimble.wd1.myworkdayjobs.com/en-US/TrimbleCareers/job/India---Chennai/Lead-Software-Development-Engineer-in-Test_R57903
+- name: Increasingly
+  ats: smartrecruiters
+  token: Increasingly
+  added: '2026-11-17'
+  from_job: https://jobs.smartrecruiters.com/Increasingly/744000162001718-senior-data-qa-engineer
