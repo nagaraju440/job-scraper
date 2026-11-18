@@ -317,3 +317,65 @@
   token: Increasingly
   added: '2026-11-17'
   from_job: https://jobs.smartrecruiters.com/Increasingly/744000162001718-senior-data-qa-engineer
+- name: Abhibus
+  ats: smartrecruiters
+  token: AbhiBus
+  added: '2026-11-18'
+  from_job: https://jobs.smartrecruiters.com/AbhiBus/744000157975487
+- name: Bristlecone
+  ats: oracle
+  url: https://iaagiz.fa.ocs.oraclecloud.com
+  site: CX
+  added: '2026-11-18'
+  from_job: https://iaagiz.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/23934
+- name: athenahealth
+  ats: workday
+  url: https://athenahealth.wd1.myworkdayjobs.com/External
+  added: '2026-11-18'
+  from_job: https://athenahealth.wd1.myworkdayjobs.com/en-US/External/job/Bangalore---Whitefield-India/Member-of-Technical-Staff--Backend_R15676
+- name: Iron Mountain
+  ats: workday
+  url: https://ironmountain.wd5.myworkdayjobs.com/iron-mountain-jobs
+  added: '2026-11-18'
+  from_job: https://ironmountain.wd5.myworkdayjobs.com/en-US/iron-mountain-jobs/job/IND--Bangalore--Level-10-CITRINE-Block-WTC-4-Bagmane-World-Technology-Center/Senior-Software-Engineer_J0108696
+- name: Chegg
+  ats: workday
+  url: https://osv-chegg.wd5.myworkdayjobs.com/Chegg
+  added: '2026-11-18'
+  from_job: https://osv-chegg.wd5.myworkdayjobs.com/en-US/Chegg/job/Jasola-New-Delhi/Lead-Software-Engineer_R5420-1
+- name: American Express
+  ats: oracle
+  url: https://egug.fa.us2.oraclecloud.com
+  site: CX_1
+  added: '2026-11-18'
+  from_job: https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/26014298
+- name: MUFG
+  ats: workday
+  url: https://mufgub.wd3.myworkdayjobs.com/MUFG-Careers
+  added: '2026-11-18'
+  from_job: https://mufgub.wd3.myworkdayjobs.com/en-US/MUFG-Careers/job/MUFG-Global-Service-Private-Ltd---Bengaluru-BCIT/SDE---Java-Full-Stack--BET-GCM-_10080855-WD
+- name: icapital
+  ats: greenhouse
+  token: icapitalnetwork
+  added: '2026-11-18'
+  from_job: https://job-boards.greenhouse.io/icapitalnetwork/jobs/8944310002
+- name: Edwards Lifesciences
+  ats: workday
+  url: https://edwards.wd5.myworkdayjobs.com/EdwardsCareers
+  added: '2026-11-18'
+  from_job: https://edwards.wd5.myworkdayjobs.com/en-US/EdwardsCareers/job/India-Pune/Engineer-I--Test-Automation_Req-52295
+- name: ABB
+  ats: workday
+  url: https://abb.wd3.myworkdayjobs.com/External_Career_Page
+  added: '2026-11-18'
+  from_job: https://abb.wd3.myworkdayjobs.com/External_Career_Page/job/Bangalore-Karnataka-India/R-D-Test-Engineer_JR00053645
+- name: Availity India
+  ats: workday
+  url: https://availity.wd1.myworkdayjobs.com/Availity_Careers_India
+  added: '2026-11-18'
+  from_job: https://availity.wd1.myworkdayjobs.com/en-US/Availity_Careers_India/job/India/Quality-Assurance-Engineer-II_R0008623
+- name: Siemens Healthineers
+  ats: workday
+  url: https://onehealthineers.wd3.myworkdayjobs.com/SHSJB
+  added: '2026-11-18'
+  from_job: https://onehealthineers.wd3.myworkdayjobs.com/SHSJB/job/PUN-MIC-T-4/Software-Quality-Engineer_R-31174-1
