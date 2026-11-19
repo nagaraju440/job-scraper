@@ -379,3 +379,18 @@
   url: https://onehealthineers.wd3.myworkdayjobs.com/SHSJB
   added: '2026-11-18'
   from_job: https://onehealthineers.wd3.myworkdayjobs.com/SHSJB/job/PUN-MIC-T-4/Software-Quality-Engineer_R-31174-1
+- name: Caterpillar Inc
+  ats: workday
+  url: https://cat.wd5.myworkdayjobs.com/CaterpillarCareers
+  added: '2026-11-19'
+  from_job: https://cat.wd5.myworkdayjobs.com/en-US/CaterpillarCareers/job/Bangalore-Karnataka/Senior-Software-Developer---D365-F-O_R0000351479-1
+- name: endava
+  ats: smartrecruiters
+  token: Endava
+  added: '2026-11-19'
+  from_job: https://jobs.smartrecruiters.com/Endava/744000162435089-full-stack-developer-angular-net-and-aws
+- name: LSEG (London Stock Exchange Group)
+  ats: workday
+  url: https://lseg.wd3.myworkdayjobs.com/Careers
+  added: '2026-11-19'
+  from_job: https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/XMLNAME-1_R0125174
