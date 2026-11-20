@@ -394,3 +394,58 @@
   url: https://lseg.wd3.myworkdayjobs.com/Careers
   added: '2026-11-19'
   from_job: https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/XMLNAME-1_R0125174
+- name: Welo Data
+  ats: lever
+  token: weloglobal
+  added: '2026-11-20'
+  from_job: https://jobs.lever.co/weloglobal/29eb882e-9a19-43b7-a935-a5b017ae2518
+- name: 3M
+  ats: workday
+  url: https://3m.wd1.myworkdayjobs.com/Search
+  added: '2026-11-20'
+  from_job: https://3m.wd1.myworkdayjobs.com/en-US/Search/job/IN-BANGALORE/Global-Network---Telecom-Services---Software-Engineer_R01172563
+- name: PDI Technologies
+  ats: lever
+  token: pditechnologies
+  added: '2026-11-20'
+  from_job: https://jobs.lever.co/pditechnologies/272e82ea-0b9b-4629-92f0-eaa2666f85ab?lever-source=Indeed
+- name: Epicor Software
+  ats: workday
+  url: https://epicorsoftware.wd5.myworkdayjobs.com/epicorjobs
+  added: '2026-11-20'
+  from_job: https://epicorsoftware.wd5.myworkdayjobs.com/en-US/epicorjobs/job/India-Bangalore/Senior-QA---Salesforce-CPQ_JR105866
+- name: Sift Stack, Inc.
+  ats: ashby
+  token: siftstack
+  added: '2026-11-20'
+  from_job: https://jobs.ashbyhq.com/siftstack/3094713a-00e4-4798-a0fc-474569c6fe2e?utm_source=Bk48XZDKm7
+- name: Saviynt
+  ats: lever
+  token: saviynt
+  added: '2026-11-20'
+  from_job: https://jobs.lever.co/saviynt/0328135f-1123-4145-aba8-c44a9bc23207
+- name: Toppan Merrill
+  ats: workday
+  url: https://toppanmerrill.wd5.myworkdayjobs.com/Toppan_Merrill
+  added: '2026-11-20'
+  from_job: https://toppanmerrill.wd5.myworkdayjobs.com/en-US/Toppan_Merrill/job/Chennai--Ascendas-IT-Park/Automation-Test-Engineer_R35557
+- name: Sandvik
+  ats: workday
+  url: https://sandvik.wd3.myworkdayjobs.com/sandvik-jobs
+  added: '2026-11-20'
+  from_job: https://sandvik.wd3.myworkdayjobs.com/en-US/sandvik-jobs/job/India-Pune/Software-Quality-Assurance-Engineer--Dynamics-365-Customer-Service_R0098824-2
+- name: MKS
+  ats: workday
+  url: https://mksinst.wd1.myworkdayjobs.com/MKSCareersEMEA
+  added: '2026-11-20'
+  from_job: https://mksinst.wd1.myworkdayjobs.com/MKSCareersEMEA/job/India-Bangalore-Whitefield/Senior-Software-and-Firmware-QA-Engineer_R23311
+- name: Logitech
+  ats: workday
+  url: https://logitech.wd5.myworkdayjobs.com/Logitech
+  added: '2026-11-20'
+  from_job: https://logitech.wd5.myworkdayjobs.com/en-US/Logitech/job/Chennai-India/Firmware-QA-Engineer_148785
+- name: PwC
+  ats: workday
+  url: https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers
+  added: '2026-11-20'
+  from_job: https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Hyderabad---Salarpuria/IN-Senior-Associate-Golang-Developer--GCC-Advisory-Bangalore_730634WD-1
