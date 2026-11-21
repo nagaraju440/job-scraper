@@ -1,0 +1,2368 @@
+{
+ "run_at_ist": "2026-11-21T21:26+05:30",
+ "mode": "evening",
+ "posted_on_ist": "2026-11-21",
+ "window_hours": 24,
+ "companies": {
+  "NVIDIA": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+   "down": null
+  },
+  "Salesforce": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs",
+   "down": null
+  },
+  "Adobe": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs",
+   "down": null
+  },
+  "PayPal": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+   "down": null
+  },
+  "Mastercard": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/CorporateCareers/jobs",
+   "down": null
+  },
+  "Target": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://target.wd5.myworkdayjobs.com/wday/cxs/target/targetcareers/jobs",
+   "down": null
+  },
+  "Autodesk": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://autodesk.wd1.myworkdayjobs.com/wday/cxs/autodesk/Ext/jobs",
+   "down": null
+  },
+  "Workday": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday/jobs",
+   "down": null
+  },
+  "Stripe": {
+   "ats": "greenhouse",
+   "open": 778,
+   "fetched": 778,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Databricks": {
+   "ats": "greenhouse",
+   "open": 896,
+   "fetched": 896,
+   "seconds": 1.0,
+   "error": null,
+   "down": null
+  },
+  "Twilio": {
+   "ats": "greenhouse",
+   "open": 109,
+   "fetched": 109,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Coinbase": {
+   "ats": "greenhouse",
+   "open": 252,
+   "fetched": 252,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Okta": {
+   "ats": "greenhouse",
+   "open": 372,
+   "fetched": 372,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "Postman": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://postman.wd108.myworkdayjobs.com/wday/cxs/postman/careers/jobs",
+   "down": null
+  },
+  "PhonePe": {
+   "ats": "smartrecruiters",
+   "open": 158,
+   "fetched": 158,
+   "seconds": 2.7,
+   "error": null,
+   "down": null
+  },
+  "Groww": {
+   "ats": "greenhouse",
+   "open": 9,
+   "fetched": 9,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Rubrik": {
+   "ats": "greenhouse",
+   "open": 208,
+   "fetched": 208,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "Cloudflare": {
+   "ats": "greenhouse",
+   "open": 503,
+   "fetched": 503,
+   "seconds": 0.7,
+   "error": null,
+   "down": null
+  },
+  "GitLab": {
+   "ats": "greenhouse",
+   "open": 246,
+   "fetched": 246,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "MongoDB": {
+   "ats": "greenhouse",
+   "open": 417,
+   "fetched": 417,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Elastic": {
+   "ats": "greenhouse",
+   "open": 382,
+   "fetched": 382,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Meesho": {
+   "ats": "lever",
+   "open": 48,
+   "fetched": 48,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "CRED": {
+   "ats": "lever",
+   "open": 11,
+   "fetched": 11,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Zeta": {
+   "ats": "lever",
+   "open": 33,
+   "fetched": 33,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Razorpay": {
+   "ats": "greenhouse",
+   "open": 29,
+   "fetched": 29,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Notion": {
+   "ats": "ashby",
+   "open": 170,
+   "fetched": 170,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Ramp": {
+   "ats": "ashby",
+   "open": 187,
+   "fetched": 187,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Visa": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa/jobs",
+   "down": null
+  },
+  "ServiceNow": {
+   "ats": "smartrecruiters",
+   "open": 80,
+   "fetched": 80,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Freshworks": {
+   "ats": "smartrecruiters",
+   "open": 30,
+   "fetched": 30,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Microsoft": {
+   "ats": "eightfold",
+   "open": 230,
+   "fetched": 36,
+   "seconds": 23.3,
+   "error": null,
+   "down": null
+  },
+  "Amazon": {
+   "ats": "amazon",
+   "open": 358,
+   "fetched": 16,
+   "seconds": 3.0,
+   "error": null,
+   "down": null
+  },
+  "Ford Motor Company": {
+   "ats": "oracle",
+   "open": 894,
+   "fetched": 6,
+   "seconds": 13.4,
+   "error": null,
+   "down": null
+  },
+  "DP World": {
+   "ats": "oracle",
+   "open": 538,
+   "fetched": 11,
+   "seconds": 12.8,
+   "error": null,
+   "down": null
+  },
+  "Ralliant": {
+   "ats": "oracle",
+   "open": 379,
+   "fetched": 2,
+   "seconds": 3.9,
+   "error": null,
+   "down": null
+  },
+  "HighLevel": {
+   "ats": "lever",
+   "open": 90,
+   "fetched": 90,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Newfold Digital": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://web.wd1.myworkdayjobs.com/wday/cxs/web/ExternalCareerSite/jobs",
+   "down": null
+  },
+  "Aspen Technology": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://aspentech.wd5.myworkdayjobs.com/wday/cxs/aspentech/AspenTech/jobs",
+   "down": null
+  },
+  "CrowdStrike": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://crowdstrike.wd5.myworkdayjobs.com/wday/cxs/crowdstrike/crowdstrikecareers/jobs",
+   "down": null
+  },
+  "Backbase": {
+   "ats": "greenhouse",
+   "open": 60,
+   "fetched": 60,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Levi Strauss & Co.": {
+   "ats": "workday",
+   "open": 31,
+   "fetched": 8,
+   "seconds": 145.8,
+   "error": null,
+   "down": null,
+   "listed": 31,
+   "country_filter": true
+  },
+  "Cohere Health": {
+   "ats": "greenhouse",
+   "open": 63,
+   "fetched": 63,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "bp": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://bpinternational.wd3.myworkdayjobs.com/wday/cxs/bpinternational/bpCareers/jobs",
+   "down": null
+  },
+  "Coursera": {
+   "ats": "greenhouse",
+   "open": 34,
+   "fetched": 34,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Airbus": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs",
+   "down": null
+  },
+  "The Hartford": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://thehartford.wd5.myworkdayjobs.com/wday/cxs/thehartford/Careers_External/jobs",
+   "down": null
+  },
+  "RELX": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://relx.wd3.myworkdayjobs.com/wday/cxs/relx/relx/jobs",
+   "down": null
+  },
+  "Yext": {
+   "ats": "greenhouse",
+   "open": 29,
+   "fetched": 29,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "UiPath": {
+   "ats": "ashby",
+   "open": 110,
+   "fetched": 110,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Arctic Wolf": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://arcticwolf.wd1.myworkdayjobs.com/wday/cxs/arcticwolf/External/jobs",
+   "down": null
+  },
+  "Itron": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://itron.wd5.myworkdayjobs.com/wday/cxs/itron/Itron/jobs",
+   "down": null
+  },
+  "Gartner": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://gartner.wd5.myworkdayjobs.com/wday/cxs/gartner/EXT/jobs",
+   "down": null
+  },
+  "NCR Voyix": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://ncr.wd1.myworkdayjobs.com/wday/cxs/ncr/ext_apac/jobs",
+   "down": null
+  },
+  "SOTI": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://soti.wd3.myworkdayjobs.com/wday/cxs/soti/Careers/jobs",
+   "down": null
+  },
+  "G-P": {
+   "ats": "greenhouse",
+   "open": 69,
+   "fetched": 69,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Fanatics Commerce": {
+   "ats": "greenhouse",
+   "open": 206,
+   "fetched": 206,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Stryker": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs",
+   "down": null
+  },
+  "SupplyHouse.com": {
+   "ats": "greenhouse",
+   "open": 31,
+   "fetched": 31,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Qualys": {
+   "ats": "workday",
+   "open": 1,
+   "fetched": 1,
+   "seconds": 25.8,
+   "error": null,
+   "down": null,
+   "listed": 1,
+   "country_filter": true
+  },
+  "SonicWall": {
+   "ats": "greenhouse",
+   "open": 40,
+   "fetched": 40,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Headout": {
+   "ats": "greenhouse",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/headoutcareers/jobs?content=true",
+   "down": null
+  },
+  "Agilon Health": {
+   "ats": "workday",
+   "open": 12,
+   "fetched": 12,
+   "seconds": 104.7,
+   "error": null,
+   "down": null,
+   "listed": 12,
+   "country_filter": false
+  },
+  "Rakuten Symphony": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://rakuten.wd1.myworkdayjobs.com/wday/cxs/rakuten/RakutenSymphony/jobs",
+   "down": null
+  },
+  "Curriculum Associates": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://curriculumassociates.wd5.myworkdayjobs.com/wday/cxs/curriculumassociates/External/jobs",
+   "down": null
+  },
+  "OpenGov": {
+   "ats": "ashby",
+   "open": 90,
+   "fetched": 90,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Crunchyroll": {
+   "ats": "greenhouse",
+   "open": 99,
+   "fetched": 99,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Wells Fargo": {
+   "ats": "workday",
+   "open": 60,
+   "fetched": 24,
+   "seconds": 20.3,
+   "error": null,
+   "down": null,
+   "listed": 60,
+   "country_filter": true
+  },
+  "U.S. Bank": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://usbank.wd1.myworkdayjobs.com/wday/cxs/usbank/US_Bank_Careers/jobs",
+   "down": null
+  },
+  "Capital One": {
+   "ats": "workday",
+   "open": 15,
+   "fetched": 3,
+   "seconds": 36.5,
+   "error": null,
+   "down": null,
+   "listed": 15,
+   "country_filter": true
+  },
+  "GE HealthCare": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://gehc.wd5.myworkdayjobs.com/wday/cxs/gehc/GEHC_ExternalSite/jobs",
+   "down": null
+  },
+  "PUMA": {
+   "ats": "workday",
+   "open": 99,
+   "fetched": 2,
+   "seconds": 7.4,
+   "error": null,
+   "down": null,
+   "listed": 99,
+   "country_filter": true
+  },
+  "MSD": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://msd.wd5.myworkdayjobs.com/wday/cxs/msd/SearchJobs/jobs",
+   "down": null
+  },
+  "Bristol Myers Squibb": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs",
+   "down": null
+  },
+  "Renesas Electronics": {
+   "ats": "smartrecruiters",
+   "open": 109,
+   "fetched": 109,
+   "seconds": 1.4,
+   "error": null,
+   "down": null
+  },
+  "tiket.com": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://tiketdotcom.wd3.myworkdayjobs.com/wday/cxs/tiketdotcom/Tiket_Careers/jobs",
+   "down": null
+  },
+  "Bosch": {
+   "ats": "smartrecruiters",
+   "open": 665,
+   "fetched": 665,
+   "seconds": 6.2,
+   "error": null,
+   "down": null
+  },
+  "H&M": {
+   "ats": "smartrecruiters",
+   "open": 111,
+   "fetched": 111,
+   "seconds": 1.4,
+   "error": null,
+   "down": null
+  },
+  "Procore": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://procore.wd12.myworkdayjobs.com/wday/cxs/procore/Procore_External_Careers/jobs",
+   "down": null
+  },
+  "Guardian Life Insurance": {
+   "ats": "workday",
+   "open": 103,
+   "fetched": 9,
+   "seconds": 139.3,
+   "error": null,
+   "down": null,
+   "listed": 103,
+   "country_filter": false
+  },
+  "ClickHouse": {
+   "ats": "ashby",
+   "open": 205,
+   "fetched": 205,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Fox Corporation": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://fox.wd1.myworkdayjobs.com/wday/cxs/fox/Domestic/jobs",
+   "down": null
+  },
+  "A.P. Moller - Maersk": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs",
+   "down": null
+  },
+  "Light & Wonder": {
+   "ats": "workday",
+   "open": 32,
+   "fetched": 2,
+   "seconds": 37.0,
+   "error": null,
+   "down": null,
+   "listed": 32,
+   "country_filter": true
+  },
+  "Nike": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://nike.wd1.myworkdayjobs.com/wday/cxs/nike/nke/jobs",
+   "down": null
+  },
+  "FactSet": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://factset.wd108.myworkdayjobs.com/wday/cxs/factset/FactSetCareers/jobs",
+   "down": null
+  },
+  "Citi": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs",
+   "down": null
+  },
+  "eBay": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://ebay.wd5.myworkdayjobs.com/wday/cxs/ebay/apply/jobs",
+   "down": null
+  },
+  "Snowflake": {
+   "ats": "ashby",
+   "open": 374,
+   "fetched": 374,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Blue Yonder": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://jda.wd5.myworkdayjobs.com/wday/cxs/jda/JDA_Careers/jobs",
+   "down": null
+  },
+  "Nextpower": {
+   "ats": "workday",
+   "open": 1,
+   "fetched": 0,
+   "seconds": 9.4,
+   "error": null,
+   "down": null,
+   "listed": 1,
+   "country_filter": true
+  },
+  "Barclays": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://barclays.wd3.myworkdayjobs.com/wday/cxs/barclays/External_Career_Site_Barclays/jobs",
+   "down": null
+  },
+  "Blackbaud": {
+   "ats": "workday",
+   "open": 45,
+   "fetched": 45,
+   "seconds": 30.1,
+   "error": null,
+   "down": null,
+   "listed": 45,
+   "country_filter": true
+  },
+  "Walmart Global Tech": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "QAD": {
+   "ats": "smartrecruiters",
+   "open": 50,
+   "fetched": 50,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Platform Science": {
+   "ats": "greenhouse",
+   "open": 27,
+   "fetched": 27,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "ZoomInfo": {
+   "ats": "greenhouse",
+   "open": 90,
+   "fetched": 90,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "iManage": {
+   "ats": "greenhouse",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "ChargePoint": {
+   "ats": "greenhouse",
+   "open": 42,
+   "fetched": 42,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Agoda": {
+   "ats": "greenhouse",
+   "open": 344,
+   "fetched": 344,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "GoDaddy": {
+   "ats": "greenhouse",
+   "open": 19,
+   "fetched": 19,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Diligent": {
+   "ats": "greenhouse",
+   "open": 6,
+   "fetched": 6,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Hinge Health": {
+   "ats": "ashby",
+   "open": 88,
+   "fetched": 88,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "NETGEAR": {
+   "ats": "ashby",
+   "open": 56,
+   "fetched": 56,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "SpotOn": {
+   "ats": "ashby",
+   "open": 77,
+   "fetched": 77,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Endpoint Clinical": {
+   "ats": "lever",
+   "open": 24,
+   "fetched": 24,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Foodsmart": {
+   "ats": "lever",
+   "open": 17,
+   "fetched": 17,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "SolarWinds": {
+   "ats": "greenhouse",
+   "open": 87,
+   "fetched": 87,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "NICE": {
+   "ats": "greenhouse",
+   "open": 115,
+   "fetched": 115,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Atolls": {
+   "ats": "greenhouse",
+   "open": 10,
+   "fetched": 10,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Menlo Security": {
+   "ats": "ashby",
+   "open": 25,
+   "fetched": 25,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "ixigo": {
+   "ats": "smartrecruiters",
+   "open": 7,
+   "fetched": 7,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Fanatics": {
+   "ats": "greenhouse",
+   "open": 33,
+   "fetched": 33,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Sonatype": {
+   "ats": "lever",
+   "open": 13,
+   "fetched": 13,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Porter": {
+   "ats": "lever",
+   "open": 20,
+   "fetched": 20,
+   "seconds": 7.7,
+   "error": null,
+   "down": null
+  },
+  "Nextiva": {
+   "ats": "greenhouse",
+   "open": 15,
+   "fetched": 15,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Xometry": {
+   "ats": "greenhouse",
+   "open": 252,
+   "fetched": 252,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "SimpliSafe": {
+   "ats": "greenhouse",
+   "open": 35,
+   "fetched": 35,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Poppulo": {
+   "ats": "greenhouse",
+   "open": 14,
+   "fetched": 14,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Nasdaq": {
+   "ats": "greenhouse",
+   "open": 23,
+   "fetched": 23,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Juniper Square": {
+   "ats": "ashby",
+   "open": 56,
+   "fetched": 56,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "OneTrust": {
+   "ats": "greenhouse",
+   "open": 84,
+   "fetched": 84,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Cleo (India)": {
+   "ats": "greenhouse",
+   "open": 14,
+   "fetched": 14,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "SmartBear": {
+   "ats": "greenhouse",
+   "open": 12,
+   "fetched": 12,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "DigiCert": {
+   "ats": "greenhouse",
+   "open": 50,
+   "fetched": 50,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Payoneer": {
+   "ats": "greenhouse",
+   "open": 100,
+   "fetched": 100,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Instawork": {
+   "ats": "greenhouse",
+   "open": 56,
+   "fetched": 56,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Harvey": {
+   "ats": "ashby",
+   "open": 388,
+   "fetched": 388,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "ConnectWise": {
+   "ats": "greenhouse",
+   "open": 46,
+   "fetched": 46,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Sophos": {
+   "ats": "lever",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "ScienceLogic": {
+   "ats": "ashby",
+   "open": 7,
+   "fetched": 7,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Fivetran": {
+   "ats": "greenhouse",
+   "open": 196,
+   "fetched": 196,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Experian": {
+   "ats": "smartrecruiters",
+   "open": 41,
+   "fetched": 41,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Celigo": {
+   "ats": "greenhouse",
+   "open": 15,
+   "fetched": 15,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "NielsenIQ": {
+   "ats": "smartrecruiters",
+   "open": 74,
+   "fetched": 74,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "AlphaSense": {
+   "ats": "greenhouse",
+   "open": 169,
+   "fetched": 169,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "AlphaSense India": {
+   "ats": "greenhouse",
+   "open": 25,
+   "fetched": 25,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Xplor": {
+   "ats": "smartrecruiters",
+   "open": 4,
+   "fetched": 4,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Inovalon": {
+   "ats": "ashby",
+   "open": 43,
+   "fetched": 43,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Mattel": {
+   "ats": "smartrecruiters",
+   "open": 33,
+   "fetched": 33,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Zocdoc": {
+   "ats": "greenhouse",
+   "open": 66,
+   "fetched": 66,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Forbes Advisor": {
+   "ats": "greenhouse",
+   "open": 26,
+   "fetched": 26,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Mirantis": {
+   "ats": "smartrecruiters",
+   "open": 3,
+   "fetched": 3,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "JumpCloud": {
+   "ats": "lever",
+   "open": 32,
+   "fetched": 32,
+   "seconds": 8.5,
+   "error": null,
+   "down": null
+  },
+  "Elsevier": {
+   "ats": "greenhouse",
+   "open": 7,
+   "fetched": 7,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Pocket FM": {
+   "ats": "lever",
+   "open": 10,
+   "fetched": 10,
+   "seconds": 5.6,
+   "error": null,
+   "down": null
+  },
+  "66degrees": {
+   "ats": "greenhouse",
+   "open": 16,
+   "fetched": 16,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Jade Global": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Playlist": {
+   "ats": "greenhouse",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/playlist/jobs?content=true",
+   "down": null
+  },
+  "Cognite": {
+   "ats": "greenhouse",
+   "open": 64,
+   "fetched": 64,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Sigmoid": {
+   "ats": "greenhouse",
+   "open": 47,
+   "fetched": 47,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Anaplan": {
+   "ats": "greenhouse",
+   "open": 123,
+   "fetched": 123,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Entrata": {
+   "ats": "lever",
+   "open": 29,
+   "fetched": 29,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Paytm": {
+   "ats": "lever",
+   "open": 199,
+   "fetched": 199,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "TransPerfect": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Zscaler": {
+   "ats": "greenhouse",
+   "open": 387,
+   "fetched": 387,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "Sia Partners": {
+   "ats": "smartrecruiters",
+   "open": 20,
+   "fetched": 20,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "WPP": {
+   "ats": "greenhouse",
+   "open": 211,
+   "fetched": 211,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Altisource": {
+   "ats": "smartrecruiters",
+   "open": 70,
+   "fetched": 70,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Point72": {
+   "ats": "greenhouse",
+   "open": 202,
+   "fetched": 202,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "YipitData": {
+   "ats": "greenhouse",
+   "open": 42,
+   "fetched": 42,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "WeWork India": {
+   "ats": "smartrecruiters",
+   "open": 1,
+   "fetched": 1,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Ethos": {
+   "ats": "greenhouse",
+   "open": 2,
+   "fetched": 2,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Narayana Health": {
+   "ats": "smartrecruiters",
+   "open": 2,
+   "fetched": 2,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Evident": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Rebel Foods": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Thales": {
+   "ats": "smartrecruiters",
+   "open": 0,
+   "fetched": 0,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Miratech": {
+   "ats": "smartrecruiters",
+   "open": 62,
+   "fetched": 62,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Altera Corporation": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://altera.wd1.myworkdayjobs.com/wday/cxs/altera/Altera/jobs",
+   "down": null
+  },
+  "Quantiphi Analytics Solutions": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://quantiphi.wd1.myworkdayjobs.com/wday/cxs/quantiphi/Careers_at_Quantiphi/jobs",
+   "down": null
+  },
+  "Dentsu Webchutney": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://dentsuaegis.wd3.myworkdayjobs.com/wday/cxs/dentsuaegis/DAN_GLOBAL/jobs",
+   "down": null
+  },
+  "Tsys Global Solutions": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://tsys.wd1.myworkdayjobs.com/wday/cxs/tsys/TSYS/jobs",
+   "down": null
+  },
+  "Candescent": {
+   "ats": "workday",
+   "open": 12,
+   "fetched": 1,
+   "seconds": 1.3,
+   "error": null,
+   "down": null,
+   "listed": 12,
+   "country_filter": true
+  },
+  "Betsol": {
+   "ats": "smartrecruiters",
+   "open": 26,
+   "fetched": 26,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "DHR Holding India": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://danaher.wd1.myworkdayjobs.com/wday/cxs/danaher/DanaherJobs/jobs",
+   "down": null
+  },
+  "Cisco": {
+   "ats": "workday",
+   "open": 320,
+   "fetched": 27,
+   "seconds": 25.7,
+   "error": null,
+   "down": null,
+   "listed": 320,
+   "country_filter": true
+  },
+  "AMERICAN EXPRESS": {
+   "ats": "oracle",
+   "open": 392,
+   "fetched": 34,
+   "seconds": 26.0,
+   "error": null,
+   "down": null
+  },
+  "Kyndryl": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://kyndryl.wd5.myworkdayjobs.com/wday/cxs/kyndryl/kyndrylprofessionalcareers/jobs",
+   "down": null
+  },
+  "Trek Bikes": {
+   "ats": "workday",
+   "open": 8,
+   "fetched": 0,
+   "seconds": 9.7,
+   "error": null,
+   "down": null,
+   "listed": 8,
+   "country_filter": true
+  },
+  "Pattern Technologies": {
+   "ats": "lever",
+   "open": 88,
+   "fetched": 88,
+   "seconds": 0.9,
+   "error": null,
+   "down": null
+  },
+  "Thomson Reuters": {
+   "ats": "workday",
+   "open": 50,
+   "fetched": 10,
+   "seconds": 130.5,
+   "error": null,
+   "down": null,
+   "listed": 50,
+   "country_filter": true
+  },
+  "Trackmind": {
+   "ats": "lever",
+   "open": 8,
+   "fetched": 8,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Incadea": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://volarisgroup.wd3.myworkdayjobs.com/wday/cxs/volarisgroup/Incadea/jobs",
+   "down": null
+  },
+  "Sumo Logic": {
+   "ats": "greenhouse",
+   "open": 26,
+   "fetched": 26,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Iqvia Biotech": {
+   "ats": "workday",
+   "open": 38,
+   "fetched": 7,
+   "seconds": 27.8,
+   "error": null,
+   "down": null,
+   "listed": 38,
+   "country_filter": true
+  },
+  "Vanguard": {
+   "ats": "workday",
+   "open": 78,
+   "fetched": 11,
+   "seconds": 11.6,
+   "error": null,
+   "down": null,
+   "listed": 78,
+   "country_filter": true
+  },
+  "ABC Fitness Solutions": {
+   "ats": "workday",
+   "open": 12,
+   "fetched": 2,
+   "seconds": 1.9,
+   "error": null,
+   "down": null,
+   "listed": 12,
+   "country_filter": true
+  },
+  "HP": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+   "down": null
+  },
+  "Hewlett Packard Enterprise ": {
+   "ats": "workday",
+   "open": 326,
+   "fetched": 14,
+   "seconds": 236.3,
+   "error": null,
+   "down": null,
+   "listed": 326,
+   "country_filter": true
+  },
+  "Sopra Steria": {
+   "ats": "smartrecruiters",
+   "open": 67,
+   "fetched": 67,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "Circles": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://circles.wd103.myworkdayjobs.com/wday/cxs/circles/Circles/jobs",
+   "down": null
+  },
+  "Experity": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://experity.wd108.myworkdayjobs.com/wday/cxs/experity/Experity_Careers/jobs",
+   "down": null
+  },
+  "Bidgely, Inc": {
+   "ats": "ashby",
+   "open": 18,
+   "fetched": 18,
+   "seconds": 0.6,
+   "error": null,
+   "down": null
+  },
+  "MRI Software": {
+   "ats": "workday",
+   "open": 27,
+   "fetched": 5,
+   "seconds": 3.6,
+   "error": null,
+   "down": null,
+   "listed": 27,
+   "country_filter": true
+  },
+  "Mouser": {
+   "ats": "oracle",
+   "open": 97,
+   "fetched": 3,
+   "seconds": 4.0,
+   "error": null,
+   "down": null
+  },
+  "Nemetschek India": {
+   "ats": "smartrecruiters",
+   "open": 16,
+   "fetched": 16,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "DXC Technology": {
+   "ats": "workday",
+   "open": 220,
+   "fetched": 15,
+   "seconds": 21.3,
+   "error": null,
+   "down": null,
+   "listed": 220,
+   "country_filter": true
+  },
+  "ZEISS Group": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://zeissgroup.wd3.myworkdayjobs.com/wday/cxs/zeissgroup/External/jobs",
+   "down": null
+  },
+  "Protolabs": {
+   "ats": "lever",
+   "open": 63,
+   "fetched": 63,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Xoom": {
+   "ats": "workday",
+   "open": 27,
+   "fetched": 10,
+   "seconds": 12.0,
+   "error": null,
+   "down": null,
+   "listed": 27,
+   "country_filter": true
+  },
+  "Legato": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://elevancehealth.wd1.myworkdayjobs.com/wday/cxs/elevancehealth/carelonglobal_in/jobs",
+   "down": null
+  },
+  "Hitachi Energy": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://hitachi.wd1.myworkdayjobs.com/wday/cxs/hitachi/hitachi/jobs",
+   "down": null
+  },
+  "Crowe Capability Center - India": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://crowe.wd12.myworkdayjobs.com/wday/cxs/crowe/External_Careers/jobs",
+   "down": null
+  },
+  "Oracle": {
+   "ats": "oracle",
+   "open": 2872,
+   "fetched": 28,
+   "seconds": 26.2,
+   "error": null,
+   "down": null
+  },
+  "Solera": {
+   "ats": "workday",
+   "open": 27,
+   "fetched": 1,
+   "seconds": 2.1,
+   "error": null,
+   "down": null,
+   "listed": 27,
+   "country_filter": true
+  },
+  "State Street": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs",
+   "down": null
+  },
+  "Cordance": {
+   "ats": "greenhouse",
+   "open": 10,
+   "fetched": 10,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "SailPoint Technologies": {
+   "ats": "workday",
+   "open": 14,
+   "fetched": 2,
+   "seconds": 43.2,
+   "error": null,
+   "down": null,
+   "listed": 14,
+   "country_filter": true
+  },
+  "Pfizer": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs",
+   "down": null
+  },
+  "Skyhigh Networks": {
+   "ats": "workday",
+   "open": 14,
+   "fetched": 2,
+   "seconds": 47.7,
+   "error": null,
+   "down": null,
+   "listed": 14,
+   "country_filter": true
+  },
+  "Enfusion": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://clearwateranalytics.wd1.myworkdayjobs.com/wday/cxs/clearwateranalytics/Clearwater_Analytics_Careers/jobs",
+   "down": null
+  },
+  "Alcon": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://alcon.wd5.myworkdayjobs.com/wday/cxs/alcon/careers_alcon/jobs",
+   "down": null
+  },
+  "QAD, Inc.": {
+   "ats": "smartrecruiters",
+   "open": 50,
+   "fetched": 50,
+   "seconds": 0.6,
+   "error": null,
+   "down": null
+  },
+  "Telstra": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://telstra.wd3.myworkdayjobs.com/wday/cxs/telstra/Telstra_Careers/jobs",
+   "down": null
+  },
+  "Deutsche Bank": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://db.wd3.myworkdayjobs.com/wday/cxs/db/DBWebsite/jobs",
+   "down": null
+  },
+  "PTC": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://ptc.wd1.myworkdayjobs.com/wday/cxs/ptc/PTC/jobs",
+   "down": null
+  },
+  "OnIT": {
+   "ats": "lever",
+   "open": 30,
+   "fetched": 30,
+   "seconds": 6.8,
+   "error": null,
+   "down": null
+  },
+  "Wolters Kluwer": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://wk.wd3.myworkdayjobs.com/wday/cxs/wk/External/jobs",
+   "down": null
+  },
+  "Zillow": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://zillow.wd5.myworkdayjobs.com/wday/cxs/zillow/Zillow_Group_External/jobs",
+   "down": null
+  },
+  "Commonwealth Bank of Australia": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://cba.wd3.myworkdayjobs.com/wday/cxs/cba/commbank_careers/jobs",
+   "down": null
+  },
+  "Agilent Technologies India Pvt Ltd.": {
+   "ats": "workday",
+   "open": 62,
+   "fetched": 3,
+   "seconds": 65.9,
+   "error": null,
+   "down": null,
+   "listed": 62,
+   "country_filter": true
+  },
+  "Sarvam": {
+   "ats": "ashby",
+   "open": 42,
+   "fetched": 42,
+   "seconds": 0.1,
+   "error": null,
+   "down": null
+  },
+  "Eurofins GSC IT DC": {
+   "ats": "smartrecruiters",
+   "open": 369,
+   "fetched": 369,
+   "seconds": 3.3,
+   "error": null,
+   "down": null
+  },
+  "Resideo": {
+   "ats": "oracle",
+   "open": 54,
+   "fetched": 0,
+   "seconds": 1.3,
+   "error": null,
+   "down": null
+  },
+  "Cloudera": {
+   "ats": "workday",
+   "open": 1,
+   "fetched": 0,
+   "seconds": 6.3,
+   "error": null,
+   "down": null,
+   "listed": 1,
+   "country_filter": true
+  },
+  "General Mills": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://genmills.wd1.myworkdayjobs.com/wday/cxs/genmills/GMI_External_Careers/jobs",
+   "down": null
+  },
+  "Morningstar": {
+   "ats": "workday",
+   "open": 37,
+   "fetched": 1,
+   "seconds": 2.6,
+   "error": null,
+   "down": null,
+   "listed": 37,
+   "country_filter": true
+  },
+  "Genpact": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://genpact.wd108.myworkdayjobs.com/wday/cxs/genpact/External_Careers/jobs",
+   "down": null
+  },
+  "Trimble": {
+   "ats": "workday",
+   "open": 19,
+   "fetched": 2,
+   "seconds": 2.6,
+   "error": null,
+   "down": null,
+   "listed": 19,
+   "country_filter": true
+  },
+  "Increasingly": {
+   "ats": "smartrecruiters",
+   "open": 10,
+   "fetched": 10,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Abhibus": {
+   "ats": "smartrecruiters",
+   "open": 6,
+   "fetched": 6,
+   "seconds": 0.4,
+   "error": null,
+   "down": null
+  },
+  "Bristlecone": {
+   "ats": "oracle",
+   "open": 142,
+   "fetched": 5,
+   "seconds": 5.7,
+   "error": null,
+   "down": null
+  },
+  "athenahealth": {
+   "ats": "workday",
+   "open": 22,
+   "fetched": 0,
+   "seconds": 2.0,
+   "error": null,
+   "down": null,
+   "listed": 22,
+   "country_filter": true
+  },
+  "Iron Mountain": {
+   "ats": "workday",
+   "open": 13,
+   "fetched": 2,
+   "seconds": 49.5,
+   "error": null,
+   "down": null,
+   "listed": 13,
+   "country_filter": true
+  },
+  "Chegg": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://osv-chegg.wd5.myworkdayjobs.com/wday/cxs/osv-chegg/Chegg/jobs",
+   "down": null
+  },
+  "American Express": {
+   "ats": "oracle",
+   "open": 392,
+   "fetched": 34,
+   "seconds": 25.0,
+   "error": null,
+   "down": null
+  },
+  "MUFG": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://mufgub.wd3.myworkdayjobs.com/wday/cxs/mufgub/MUFG-Careers/jobs",
+   "down": null
+  },
+  "icapital": {
+   "ats": "greenhouse",
+   "open": 235,
+   "fetched": 235,
+   "seconds": 0.3,
+   "error": null,
+   "down": null
+  },
+  "Edwards Lifesciences": {
+   "ats": "workday",
+   "open": 34,
+   "fetched": 2,
+   "seconds": 42.7,
+   "error": null,
+   "down": null,
+   "listed": 34,
+   "country_filter": true
+  },
+  "ABB": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://abb.wd3.myworkdayjobs.com/wday/cxs/abb/External_Career_Page/jobs",
+   "down": null
+  },
+  "Availity India": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://availity.wd1.myworkdayjobs.com/wday/cxs/availity/Availity_Careers_India/jobs",
+   "down": null
+  },
+  "Siemens Healthineers": {
+   "ats": "workday",
+   "open": 24,
+   "fetched": 3,
+   "seconds": 4.6,
+   "error": null,
+   "down": null,
+   "listed": 24,
+   "country_filter": true
+  },
+  "Caterpillar Inc": {
+   "ats": "workday",
+   "open": 128,
+   "fetched": 18,
+   "seconds": 262.5,
+   "error": null,
+   "down": null,
+   "listed": 128,
+   "country_filter": true
+  },
+  "endava": {
+   "ats": "smartrecruiters",
+   "open": 19,
+   "fetched": 19,
+   "seconds": 0.5,
+   "error": null,
+   "down": null
+  },
+  "LSEG (London Stock Exchange Group)": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://lseg.wd3.myworkdayjobs.com/wday/cxs/lseg/Careers/jobs",
+   "down": null
+  },
+  "Welo Data": {
+   "ats": "lever",
+   "open": 462,
+   "fetched": 462,
+   "seconds": 18.4,
+   "error": null,
+   "down": null
+  },
+  "3M": {
+   "ats": "workday",
+   "open": 108,
+   "fetched": 11,
+   "seconds": 192.1,
+   "error": null,
+   "down": null,
+   "listed": 108,
+   "country_filter": true
+  },
+  "PDI Technologies": {
+   "ats": "lever",
+   "open": 26,
+   "fetched": 26,
+   "seconds": 0.0,
+   "error": null,
+   "down": null
+  },
+  "Epicor Software": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://epicorsoftware.wd5.myworkdayjobs.com/wday/cxs/epicorsoftware/epicorjobs/jobs",
+   "down": null
+  },
+  "Sift Stack, Inc.": {
+   "ats": "ashby",
+   "open": 20,
+   "fetched": 20,
+   "seconds": 0.2,
+   "error": null,
+   "down": null
+  },
+  "Saviynt": {
+   "ats": "lever",
+   "open": 59,
+   "fetched": 59,
+   "seconds": 10.7,
+   "error": null,
+   "down": null
+  },
+  "Toppan Merrill": {
+   "ats": "workday",
+   "open": 3,
+   "fetched": 1,
+   "seconds": 26.7,
+   "error": null,
+   "down": null,
+   "listed": 3,
+   "country_filter": true
+  },
+  "Sandvik": {
+   "ats": "workday",
+   "open": 12,
+   "fetched": 7,
+   "seconds": 26.8,
+   "error": null,
+   "down": null,
+   "listed": 12,
+   "country_filter": true
+  },
+  "MKS": {
+   "ats": "workday",
+   "open": 34,
+   "fetched": 3,
+   "seconds": 59.8,
+   "error": null,
+   "down": null,
+   "listed": 34,
+   "country_filter": true
+  },
+  "Logitech": {
+   "ats": "workday",
+   "open": 13,
+   "fetched": 2,
+   "seconds": 29.0,
+   "error": null,
+   "down": null,
+   "listed": 13,
+   "country_filter": true
+  },
+  "PwC": {
+   "ats": "workday",
+   "open": null,
+   "fetched": 0,
+   "seconds": 0,
+   "error": "HTTPError: 429 for https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs",
+   "down": null
+  }
+ },
+ "boards": {
+  "nagaraju": {
+   "counts": {
+    "jobspy-linkedin": 769,
+    "jobspy-indeed": 91
+   },
+   "errors": []
+  },
+  "jhansi": {
+   "counts": {
+    "jobspy-linkedin": 150,
+    "jobspy-indeed": 47
+   },
+   "errors": []
+  },
+  "linkedin_details": {
+   "wanted": 124,
+   "fetched": 96,
+   "with_apply_link": 0,
+   "errors": []
+  }
+ },
+ "problems": [
+  "NVIDIA (workday): HTTPError: 429 for https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+  "Salesforce (workday): HTTPError: 429 for https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs",
+  "Adobe (workday): HTTPError: 429 for https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs",
+  "PayPal (workday): HTTPError: 429 for https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+  "Mastercard (workday): HTTPError: 429 for https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/CorporateCareers/jobs",
+  "Target (workday): HTTPError: 429 for https://target.wd5.myworkdayjobs.com/wday/cxs/target/targetcareers/jobs",
+  "Autodesk (workday): HTTPError: 429 for https://autodesk.wd1.myworkdayjobs.com/wday/cxs/autodesk/Ext/jobs",
+  "Workday (workday): HTTPError: 429 for https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday/jobs",
+  "Postman (workday): HTTPError: 429 for https://postman.wd108.myworkdayjobs.com/wday/cxs/postman/careers/jobs",
+  "Visa (workday): HTTPError: 429 for https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa/jobs",
+  "Newfold Digital (workday): HTTPError: 429 for https://web.wd1.myworkdayjobs.com/wday/cxs/web/ExternalCareerSite/jobs",
+  "Aspen Technology (workday): HTTPError: 429 for https://aspentech.wd5.myworkdayjobs.com/wday/cxs/aspentech/AspenTech/jobs",
+  "CrowdStrike (workday): HTTPError: 429 for https://crowdstrike.wd5.myworkdayjobs.com/wday/cxs/crowdstrike/crowdstrikecareers/jobs",
+  "bp (workday): HTTPError: 429 for https://bpinternational.wd3.myworkdayjobs.com/wday/cxs/bpinternational/bpCareers/jobs",
+  "Airbus (workday): HTTPError: 429 for https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs",
+  "The Hartford (workday): HTTPError: 429 for https://thehartford.wd5.myworkdayjobs.com/wday/cxs/thehartford/Careers_External/jobs",
+  "RELX (workday): HTTPError: 429 for https://relx.wd3.myworkdayjobs.com/wday/cxs/relx/relx/jobs",
+  "Arctic Wolf (workday): HTTPError: 429 for https://arcticwolf.wd1.myworkdayjobs.com/wday/cxs/arcticwolf/External/jobs",
+  "Itron (workday): HTTPError: 429 for https://itron.wd5.myworkdayjobs.com/wday/cxs/itron/Itron/jobs",
+  "Gartner (workday): HTTPError: 429 for https://gartner.wd5.myworkdayjobs.com/wday/cxs/gartner/EXT/jobs",
+  "NCR Voyix (workday): HTTPError: 429 for https://ncr.wd1.myworkdayjobs.com/wday/cxs/ncr/ext_apac/jobs",
+  "SOTI (workday): HTTPError: 429 for https://soti.wd3.myworkdayjobs.com/wday/cxs/soti/Careers/jobs",
+  "Stryker (workday): HTTPError: 429 for https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs",
+  "Headout (greenhouse): HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/headoutcareers/jobs?content=true",
+  "Rakuten Symphony (workday): HTTPError: 429 for https://rakuten.wd1.myworkdayjobs.com/wday/cxs/rakuten/RakutenSymphony/jobs",
+  "Curriculum Associates (workday): HTTPError: 429 for https://curriculumassociates.wd5.myworkdayjobs.com/wday/cxs/curriculumassociates/External/jobs",
+  "U.S. Bank (workday): HTTPError: 429 for https://usbank.wd1.myworkdayjobs.com/wday/cxs/usbank/US_Bank_Careers/jobs",
+  "GE HealthCare (workday): HTTPError: 429 for https://gehc.wd5.myworkdayjobs.com/wday/cxs/gehc/GEHC_ExternalSite/jobs",
+  "MSD (workday): HTTPError: 429 for https://msd.wd5.myworkdayjobs.com/wday/cxs/msd/SearchJobs/jobs",
+  "Bristol Myers Squibb (workday): HTTPError: 429 for https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs",
+  "tiket.com (workday): HTTPError: 429 for https://tiketdotcom.wd3.myworkdayjobs.com/wday/cxs/tiketdotcom/Tiket_Careers/jobs",
+  "Procore (workday): HTTPError: 429 for https://procore.wd12.myworkdayjobs.com/wday/cxs/procore/Procore_External_Careers/jobs",
+  "Fox Corporation (workday): HTTPError: 429 for https://fox.wd1.myworkdayjobs.com/wday/cxs/fox/Domestic/jobs",
+  "A.P. Moller - Maersk (workday): HTTPError: 429 for https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs",
+  "Nike (workday): HTTPError: 429 for https://nike.wd1.myworkdayjobs.com/wday/cxs/nike/nke/jobs",
+  "FactSet (workday): HTTPError: 429 for https://factset.wd108.myworkdayjobs.com/wday/cxs/factset/FactSetCareers/jobs",
+  "Citi (workday): HTTPError: 429 for https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs",
+  "eBay (workday): HTTPError: 429 for https://ebay.wd5.myworkdayjobs.com/wday/cxs/ebay/apply/jobs",
+  "Blue Yonder (workday): HTTPError: 429 for https://jda.wd5.myworkdayjobs.com/wday/cxs/jda/JDA_Careers/jobs",
+  "Barclays (workday): HTTPError: 429 for https://barclays.wd3.myworkdayjobs.com/wday/cxs/barclays/External_Career_Site_Barclays/jobs",
+  "Playlist (greenhouse): HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/playlist/jobs?content=true",
+  "Altera Corporation (workday): HTTPError: 429 for https://altera.wd1.myworkdayjobs.com/wday/cxs/altera/Altera/jobs",
+  "Quantiphi Analytics Solutions (workday): HTTPError: 429 for https://quantiphi.wd1.myworkdayjobs.com/wday/cxs/quantiphi/Careers_at_Quantiphi/jobs",
+  "Dentsu Webchutney (workday): HTTPError: 429 for https://dentsuaegis.wd3.myworkdayjobs.com/wday/cxs/dentsuaegis/DAN_GLOBAL/jobs",
+  "Tsys Global Solutions (workday): HTTPError: 429 for https://tsys.wd1.myworkdayjobs.com/wday/cxs/tsys/TSYS/jobs",
+  "DHR Holding India (workday): HTTPError: 429 for https://danaher.wd1.myworkdayjobs.com/wday/cxs/danaher/DanaherJobs/jobs",
+  "Kyndryl (workday): HTTPError: 429 for https://kyndryl.wd5.myworkdayjobs.com/wday/cxs/kyndryl/kyndrylprofessionalcareers/jobs",
+  "Incadea (workday): HTTPError: 429 for https://volarisgroup.wd3.myworkdayjobs.com/wday/cxs/volarisgroup/Incadea/jobs",
+  "HP (workday): HTTPError: 429 for https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+  "Circles (workday): HTTPError: 429 for https://circles.wd103.myworkdayjobs.com/wday/cxs/circles/Circles/jobs",
+  "Experity (workday): HTTPError: 429 for https://experity.wd108.myworkdayjobs.com/wday/cxs/experity/Experity_Careers/jobs",
+  "ZEISS Group (workday): HTTPError: 429 for https://zeissgroup.wd3.myworkdayjobs.com/wday/cxs/zeissgroup/External/jobs",
+  "Legato (workday): HTTPError: 429 for https://elevancehealth.wd1.myworkdayjobs.com/wday/cxs/elevancehealth/carelonglobal_in/jobs",
+  "Hitachi Energy (workday): HTTPError: 429 for https://hitachi.wd1.myworkdayjobs.com/wday/cxs/hitachi/hitachi/jobs",
+  "Crowe Capability Center - India (workday): HTTPError: 429 for https://crowe.wd12.myworkdayjobs.com/wday/cxs/crowe/External_Careers/jobs",
+  "State Street (workday): HTTPError: 429 for https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs",
+  "Pfizer (workday): HTTPError: 429 for https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs",
+  "Enfusion (workday): HTTPError: 429 for https://clearwateranalytics.wd1.myworkdayjobs.com/wday/cxs/clearwateranalytics/Clearwater_Analytics_Careers/jobs",
+  "Alcon (workday): HTTPError: 429 for https://alcon.wd5.myworkdayjobs.com/wday/cxs/alcon/careers_alcon/jobs",
+  "Telstra (workday): HTTPError: 429 for https://telstra.wd3.myworkdayjobs.com/wday/cxs/telstra/Telstra_Careers/jobs",
+  "Deutsche Bank (workday): HTTPError: 429 for https://db.wd3.myworkdayjobs.com/wday/cxs/db/DBWebsite/jobs",
+  "PTC (workday): HTTPError: 429 for https://ptc.wd1.myworkdayjobs.com/wday/cxs/ptc/PTC/jobs",
+  "Wolters Kluwer (workday): HTTPError: 429 for https://wk.wd3.myworkdayjobs.com/wday/cxs/wk/External/jobs",
+  "Zillow (workday): HTTPError: 429 for https://zillow.wd5.myworkdayjobs.com/wday/cxs/zillow/Zillow_Group_External/jobs",
+  "Commonwealth Bank of Australia (workday): HTTPError: 429 for https://cba.wd3.myworkdayjobs.com/wday/cxs/cba/commbank_careers/jobs",
+  "General Mills (workday): HTTPError: 429 for https://genmills.wd1.myworkdayjobs.com/wday/cxs/genmills/GMI_External_Careers/jobs",
+  "Genpact (workday): HTTPError: 429 for https://genpact.wd108.myworkdayjobs.com/wday/cxs/genpact/External_Careers/jobs",
+  "Chegg (workday): HTTPError: 422 Client Error: Unprocessable Entity for url: https://osv-chegg.wd5.myworkdayjobs.com/wday/cxs/osv-chegg/Chegg/jobs",
+  "MUFG (workday): HTTPError: 429 for https://mufgub.wd3.myworkdayjobs.com/wday/cxs/mufgub/MUFG-Careers/jobs",
+  "ABB (workday): HTTPError: 429 for https://abb.wd3.myworkdayjobs.com/wday/cxs/abb/External_Career_Page/jobs",
+  "Availity India (workday): HTTPError: 429 for https://availity.wd1.myworkdayjobs.com/wday/cxs/availity/Availity_Careers_India/jobs",
+  "LSEG (London Stock Exchange Group) (workday): HTTPError: 429 for https://lseg.wd3.myworkdayjobs.com/wday/cxs/lseg/Careers/jobs",
+  "Epicor Software (workday): HTTPError: 429 for https://epicorsoftware.wd5.myworkdayjobs.com/wday/cxs/epicorsoftware/epicorjobs/jobs",
+  "PwC (workday): HTTPError: 429 for https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs",
+  "nagaraju: naukri returned 0 jobs []",
+  "jhansi: naukri returned 0 jobs []"
+ ],
+ "new_feeds_discovered": [
+  "JLL (workday)",
+  "DBS Bank (workday)"
+ ],
+ "summary": {
+  "nagaraju": {
+   "kept": 102,
+   "added_now": 102,
+   "dropped": {
+    "title": 12118,
+    "location": 592,
+    "not-posted-today": 1073,
+    "title-excluded": 699,
+    "duplicate": 192,
+    "posted-date-unknown": 3
+   },
+   "no_description": 12,
+   "new_companies": [
+    "Amazon Web Services (AWS)",
+    "American Express Global Business Travel",
+    "Applied Systems",
+    "Bain & Company",
+    "BitGo",
+    "Brace Infotech Private Limited",
+    "CAREERBLOC ~",
+    "CVTPL",
+    "Catapult Auditing LLC S.O.C",
+    "Clarivate",
+    "Clean Harbors",
+    "Connecting The Dots",
+    "Consilio LLC",
+    "Cornerstone OnDemand",
+    "DNV",
+    "Data Eminence",
+    "Deloitte",
+    "Development Logics",
+    "Discover WebTech Pvt. Ltd.",
+    "Doxel",
+    "Ericsson",
+    "Flexiple",
+    "Fluidra Technologies Private Limited",
+    "Grapes Worldwide",
+    "Hitachi Vantara",
+    "Hivekra",
+    "Husky Technologies",
+    "IDFC FIRST Bank",
+    "Indian Institute of Technology, Bombay",
+    "Institite of NeuroDevelopment",
+    "JPMorganChase",
+    "Joblet-AI",
+    "Kasar credit and capital private limited",
+    "LILA",
+    "Mograsys technologies",
+    "Mott MacDonald",
+    "NTT DATA North America",
+    "Optum India",
+    "PRS CLOUD TECH",
+    "PSG Matriculation School",
+    "Persistent Systems",
+    "Primetrace",
+    "Procore Technologies",
+    "QuantEdge.ai",
+    "Quartyl Technologies",
+    "REsimpli",
+    "STOXX",
+    "Shure India",
+    "SimCorp",
+    "TEAMLIO PRIVATE LIMITED",
+    "TTEC Digital",
+    "TalentMicro",
+    "Target in India",
+    "Tayana Academy",
+    "Techdome",
+    "Technip Energies",
+    "TekskyES",
+    "Tesco Bengaluru",
+    "Thermo Fisher Scientific",
+    "Toast",
+    "Trimble Inc.",
+    "Truveta",
+    "Tuebora Inc",
+    "Tvaram",
+    "UST",
+    "Vertex Suite",
+    "YASH Technologies Middle East",
+    "Zepcruit"
+   ]
+  },
+  "jhansi": {
+   "kept": 46,
+   "added_now": 46,
+   "dropped": {
+    "title": 13750,
+    "location": 37,
+    "not-posted-today": 192,
+    "title-excluded": 50,
+    "posted-date-unknown": 4,
+    "duplicate": 37
+   },
+   "no_description": 16,
+   "new_companies": [
+    "ACL Digital",
+    "AQM Technologies",
+    "Alignify Manpower Solutions",
+    "American Express Global Business Travel",
+    "Bajaj Finserv",
+    "Beckman Coulter Diagnostics",
+    "Best Of Breed Software Solutions India Private Limited Official",
+    "BetaNXT",
+    "CAREERBLOC ~",
+    "Capgemini",
+    "Ciklum India",
+    "Code Creator Technology Pvt Ltd",
+    "Cybaze Insights LLP",
+    "F5",
+    "Flexiple",
+    "Global Payments Inc.",
+    "Golden Opportunities",
+    "GreatHR Solutions",
+    "Husky Technologies",
+    "ICE",
+    "Impact Analytics",
+    "Joblet-AI",
+    "Labcorp",
+    "Macquarie Group",
+    "NWN",
+    "Nasuni",
+    "Pearson",
+    "RADcube",
+    "RadCube",
+    "Scoutit",
+    "Sightview Software",
+    "Skills Outsource Think Pvt Ltd",
+    "Sofueled",
+    "Tesslogs IT Solutions",
+    "Thermo Fisher Scientific",
+    "Upsurge",
+    "Versa Networks",
+    "Webito Infotech",
+    "Zeta Global",
+    "betterworks"
+   ]
+  }
+ }
+}

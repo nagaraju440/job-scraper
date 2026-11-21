@@ -449,3 +449,13 @@
   url: https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers
   added: '2026-11-20'
   from_job: https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Hyderabad---Salarpuria/IN-Senior-Associate-Golang-Developer--GCC-Advisory-Bangalore_730634WD-1
+- name: JLL
+  ats: workday
+  url: https://jll.wd1.myworkdayjobs.com/jllcareers
+  added: '2026-11-21'
+  from_job: https://jll.wd1.myworkdayjobs.com/jllcareers/job/Bengaluru-KA/Software-Engineer-2_REQ547225-1
+- name: DBS Bank
+  ats: workday
+  url: https://dbs.wd3.myworkdayjobs.com/DBS_Careers
+  added: '2026-11-21'
+  from_job: https://dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers/job/Hyderabad---DTI-Skyview-SEZ/Associate--Quality-Assurance-Engineer--Institutional-Banking-Group-Technology_WD90804
