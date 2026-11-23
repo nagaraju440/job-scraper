@@ -459,3 +459,48 @@
   url: https://dbs.wd3.myworkdayjobs.com/DBS_Careers
   added: '2026-11-21'
   from_job: https://dbs.wd3.myworkdayjobs.com/en-US/DBS_Careers/job/Hyderabad---DTI-Skyview-SEZ/Associate--Quality-Assurance-Engineer--Institutional-Banking-Group-Technology_WD90804
+- name: Kaplan
+  ats: workday
+  url: https://ghc.wd1.myworkdayjobs.com/Kaplan_Careers
+  added: '2026-11-23'
+  from_job: https://ghc.wd1.myworkdayjobs.com/en-US/Kaplan_Careers/job/Bangalore-KA-India/AI-Software-Engineer--Hybrid-_JR259570
+- name: FloQast
+  ats: lever
+  token: floqast
+  added: '2026-11-23'
+  from_job: https://jobs.lever.co/floqast/9450f0a4-5a9c-41cb-8304-01243130f240
+- name: RX
+  ats: workday
+  url: https://relx.wd3.myworkdayjobs.com/ReedExhibitions
+  added: '2026-11-23'
+  from_job: https://relx.wd3.myworkdayjobs.com/en-US/ReedExhibitions/job/Chennai/Software-Engineer-III_R118990-2
+- name: The Nielsen Company
+  ats: smartrecruiters
+  token: TheNielsenCompany
+  added: '2026-11-23'
+  from_job: https://jobs.smartrecruiters.com/TheNielsenCompany/3743990017026985-manager-mts
+- name: Northern Trust Corp.
+  ats: workday
+  url: https://ntrs.wd1.myworkdayjobs.com/northerntrust
+  added: '2026-11-23'
+  from_job: https://ntrs.wd1.myworkdayjobs.com/en-US/northerntrust/job/Pune-India/GPS-Full-Stack-Engineer_R153094
+- name: Dozee
+  ats: lever
+  token: dozee
+  added: '2026-11-23'
+  from_job: https://jobs.lever.co/dozee/4c9eb0cb-0eb6-4a1a-a3c3-eefcdafb0ea3?lever-source=Indeed
+- name: CSG
+  ats: workday
+  url: https://csgi.wd5.myworkdayjobs.com/CSGCareers
+  added: '2026-11-23'
+  from_job: https://csgi.wd5.myworkdayjobs.com/en-US/CSGCareers/job/INBangaloreOffice/SDE-I--Mainframe-Batch-Developer_32495-1
+- name: LPL Financial
+  ats: workday
+  url: https://lplfinancial.wd1.myworkdayjobs.com/India_Ext
+  added: '2026-11-23'
+  from_job: https://lplfinancial.wd1.myworkdayjobs.com/India_Ext/job/Hyderabad/Software-Engineer---SDET_R-055036
+- name: KLA
+  ats: workday
+  url: https://kla.wd1.myworkdayjobs.com/Search
+  added: '2026-11-23'
+  from_job: https://kla.wd1.myworkdayjobs.com/en-US/Search/job/Chennai-India/Engineer--Software-Test-Automation_2643106-1
