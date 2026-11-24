@@ -504,3 +504,18 @@
   url: https://kla.wd1.myworkdayjobs.com/Search
   added: '2026-11-23'
   from_job: https://kla.wd1.myworkdayjobs.com/en-US/Search/job/Chennai-India/Engineer--Software-Test-Automation_2643106-1
+- name: FCT
+  ats: workday
+  url: https://firstam.wd1.myworkdayjobs.com/faicareers
+  added: '2026-11-24'
+  from_job: https://firstam.wd1.myworkdayjobs.com/faicareers/job/IND-Karnataka-Bangalore/Staff-Engineer_R058909
+- name: Crux
+  ats: smartrecruiters
+  token: CRUX1
+  added: '2026-11-24'
+  from_job: https://jobs.smartrecruiters.com/CRUX1/744000163388289-full-stack-developer
+- name: Unisys
+  ats: workday
+  url: https://unisys.wd5.myworkdayjobs.com/External
+  added: '2026-11-24'
+  from_job: https://unisys.wd5.myworkdayjobs.com/en-US/External/job/Bangalore-KA-India/Sr-Eng-Software-QA-Eng_REQ576894
