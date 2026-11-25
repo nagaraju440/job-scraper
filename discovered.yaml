@@ -519,3 +519,54 @@
   url: https://unisys.wd5.myworkdayjobs.com/External
   added: '2026-11-24'
   from_job: https://unisys.wd5.myworkdayjobs.com/en-US/External/job/Bangalore-KA-India/Sr-Eng-Software-QA-Eng_REQ576894
+- name: Beta Simulation Solutions
+  ats: workday
+  url: https://cadence.wd1.myworkdayjobs.com/External_Careers
+  added: '2026-11-25'
+  from_job: https://cadence.wd1.myworkdayjobs.com/en-US/External_Careers/job/BANGALORE/Lead-Software-Engineer--Back-End-Engineer-_R52298-1?Location_Country=c4f78be1a8f14da0ab49ce1162348a5e
+- name: CodeRabbit
+  ats: ashby
+  token: coderabbit
+  added: '2026-11-25'
+  from_job: https://jobs.ashbyhq.com/coderabbit/2ac28238-d1e4-423c-82ae-03dc826bee40
+- name: Zebra Technologies
+  ats: workday
+  url: https://zebra.wd501.myworkdayjobs.com/Zebra_careers
+  added: '2026-11-25'
+  from_job: https://zebra.wd501.myworkdayjobs.com/en-US/Zebra_careers/job/Bengaluru-India/Software-Engineer-II_JR103938
+- name: Scientific Games
+  ats: workday
+  url: https://sglottery.wd5.myworkdayjobs.com/ScientificGamesExternalCareers
+  added: '2026-11-25'
+  from_job: https://sglottery.wd5.myworkdayjobs.com/en-US/ScientificGamesExternalCareers/job/Bangalore-India/Senior-Software-Engineer_R505564
+- name: Chubb Fire & Security
+  ats: workday
+  url: https://chubbfiresecurity.wd3.myworkdayjobs.com/chubbfs
+  added: '2026-11-25'
+  from_job: https://chubbfiresecurity.wd3.myworkdayjobs.com/en-US/chubbfs/job/2nd-Floor-MFAR-Manyata-Tech-Park-Greenheart-Phase-I-Kasaba-Hobli-Nagavara-Village-Bengaluru-560045/Senior-Fullstack-Developer_JR40007209
+- name: Ares Management
+  ats: workday
+  url: https://aresmgmt.wd1.myworkdayjobs.com/External
+  added: '2026-11-25'
+  from_job: https://aresmgmt.wd1.myworkdayjobs.com/en-US/External/job/Mumbai-India/Senior-Associate--AI-Platform-Engineer--Senior-Front-End-Engineer-_R8831
+- name: NCR Atleos
+  ats: workday
+  url: https://ncratleos.wd1.myworkdayjobs.com/ext_apacatleos
+  added: '2026-11-25'
+  from_job: https://ncratleos.wd1.myworkdayjobs.com/ext_apacatleos/job/HYDERABAD-IND/Software-Engineer_R1155131-2
+- name: Embitel Technologies
+  ats: workday
+  url: https://diconium.wd3.myworkdayjobs.com/Embitel_Technologies
+  added: '2026-11-25'
+  from_job: https://diconium.wd3.myworkdayjobs.com/en-US/Embitel_Technologies/job/Pune/QA-Automation-Engineer_JR101902
+- name: Forrester
+  ats: workday
+  url: https://forrester.wd501.myworkdayjobs.com/careers
+  added: '2026-11-25'
+  from_job: https://forrester.wd501.myworkdayjobs.com/en-US/careers/job/Bangalore---Delhi-India/Senior-QA-Analyst-I_R-101642
+- name: Jefferies LLC
+  ats: oracle
+  url: https://hdid.fa.us2.oraclecloud.com
+  site: CX_1
+  added: '2026-11-25'
+  from_job: https://hdid.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/5135
