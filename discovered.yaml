@@ -570,3 +570,78 @@
   site: CX_1
   added: '2026-11-25'
   from_job: https://hdid.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/5135
+- name: Conde Nast India
+  ats: workday
+  url: https://condenast.wd115.myworkdayjobs.com/CondeCareers
+  added: '2026-11-26'
+  from_job: https://condenast.wd115.myworkdayjobs.com/en-US/CondeCareers/job/MARKSQUARE-Bengaluru-IN/Software-Engineer-II_R-25421-1?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e
+- name: Generac Captiva Pvt. Ltd.
+  ats: workday
+  url: https://generac.wd5.myworkdayjobs.com/ExternalCareers
+  added: '2026-11-26'
+  from_job: https://generac.wd5.myworkdayjobs.com/ExternalCareers/job/Pune-India/Software-Development-Engineer-II_JR17089
+- name: Blackstone
+  ats: workday
+  url: https://blackstone.wd1.myworkdayjobs.com/Blackstone_Careers
+  added: '2026-11-26'
+  from_job: https://blackstone.wd1.myworkdayjobs.com/en-US/Blackstone_Careers/job/Bangalore/Risk---Compliance-Technology---Senior-Software-Engineer_46058-1
+- name: Michelin
+  ats: workday
+  url: https://michelinhr.wd3.myworkdayjobs.com/Michelin
+  added: '2026-11-26'
+  from_job: https://michelinhr.wd3.myworkdayjobs.com/fr-FR/Michelin/job/Pune/Web-Fullstack-Developer---CX_R-2026022447-1
+- name: Movado
+  ats: workday
+  url: https://movadogroup.wd1.myworkdayjobs.com/Careers
+  added: '2026-11-26'
+  from_job: https://movadogroup.wd1.myworkdayjobs.com/en-US/Careers/job/Bangalore-India/Senior-Full-Stack-Java-Developer_JR00003237
+- name: TransUnion
+  ats: workday
+  url: https://transunion.wd5.myworkdayjobs.com/TransUnion
+  added: '2026-11-26'
+  from_job: https://transunion.wd5.myworkdayjobs.com/en-US/TransUnion/job/Bengaluru/Senior-Software-Engineer_19043493-1
+- name: Extreme Networks
+  ats: workday
+  url: https://extremenetworks.wd503.myworkdayjobs.com/Extreme_Networks
+  added: '2026-11-26'
+  from_job: https://extremenetworks.wd503.myworkdayjobs.com/en-US/Extreme_Networks/job/Chennai-India/STAFF-QA-SW-ENGINEER_JR100049
+- name: Solventum
+  ats: workday
+  url: https://healthcare.wd1.myworkdayjobs.com/Search
+  added: '2026-11-26'
+  from_job: https://healthcare.wd1.myworkdayjobs.com/Search/job/IN-Bangalore-Kar/Quality-Engineer_R01135549
+- name: Trintech
+  ats: workday
+  url: https://trintech.wd501.myworkdayjobs.com/Trintech
+  added: '2026-11-26'
+  from_job: https://trintech.wd501.myworkdayjobs.com/en-US/Trintech/job/India---Noida/Principal-Software-Test-Engineer_JR100268
+- name: Comcast India Engineering Center I, LLP
+  ats: workday
+  url: https://comcast.wd115.myworkdayjobs.com/Comcast_Careers
+  added: '2026-11-26'
+  from_job: https://comcast.wd115.myworkdayjobs.com/Comcast_Careers/job/India---Chennai-Comcast-India-Engineering-Cent/Engineer-2----SDET_R446246
+- name: Uniphore
+  ats: workday
+  url: https://uniphore.wd503.myworkdayjobs.com/Uniphore
+  added: '2026-11-26'
+  from_job: https://uniphore.wd503.myworkdayjobs.com/en-US/Uniphore/job/India---Bangalore/Senior-Staff-Software-Engineer--SDET-_JR101144-1
+- name: Amadeus
+  ats: workday
+  url: https://amadeus.wd502.myworkdayjobs.com/jobs
+  added: '2026-11-26'
+  from_job: https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Bangalore/QA-Engineer-3_R37835-1
+- name: Lloyds Technology Centre
+  ats: workday
+  url: https://lbg.wd3.myworkdayjobs.com/Lloyds_Technology_Centre
+  added: '2026-11-26'
+  from_job: https://lbg.wd3.myworkdayjobs.com/en-US/Lloyds_Technology_Centre/job/Hyderabad-Knowledge-Park-Tower-2/Senior-Quality-Engineer_167286
+- name: Notified
+  ats: workday
+  url: https://equiniti.wd3.myworkdayjobs.com/Opportunities
+  added: '2026-11-26'
+  from_job: https://equiniti.wd3.myworkdayjobs.com/en-US/Opportunities/job/Bangalore/Sr-QA-Test-Analyst_R18226
+- name: CUBE
+  ats: ashby
+  token: CUBE
+  added: '2026-11-26'
+  from_job: https://jobs.ashbyhq.com/CUBE/e2d3fa95-2e57-4696-8a0f-5e6739a0b0eb?utm_source=n3NmAoxjO2
