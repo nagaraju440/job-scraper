@@ -645,3 +645,14 @@
   token: CUBE
   added: '2026-11-26'
   from_job: https://jobs.ashbyhq.com/CUBE/e2d3fa95-2e57-4696-8a0f-5e6739a0b0eb?utm_source=n3NmAoxjO2
+- name: Vendavo
+  ats: lever
+  token: vendavo
+  added: '2026-11-27'
+  from_job: https://jobs.lever.co/vendavo/74da7b9b-5d23-449f-9dea-c89e322d2650
+- name: Conneqt
+  ats: oracle
+  url: https://iaceiz.fa.ocs.oraclecloud.com
+  site: CX_1
+  added: '2026-11-27'
+  from_job: https://iaceiz.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/263522
