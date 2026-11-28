@@ -656,3 +656,8 @@
   site: CX_1
   added: '2026-11-27'
   from_job: https://iaceiz.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/263522
+- name: Bolna AI
+  ats: ashby
+  token: bolna
+  added: '2026-11-28'
+  from_job: https://jobs.ashbyhq.com/bolna/f7cc2d1d-5fae-494e-9c5f-06404f82f43b?utm_source=0DEgkQQlnO
